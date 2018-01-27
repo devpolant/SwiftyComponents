@@ -7,14 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		148482C5201D31000062825F /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148482C3201D30F50062825F /* Components.framework */; };
+		148482C6201D31000062825F /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 148482C3201D30F50062825F /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14D619D9201D28B80093CB06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D619D8201D28B80093CB06 /* AppDelegate.swift */; };
 		14D619DB201D28B80093CB06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D619DA201D28B80093CB06 /* ViewController.swift */; };
 		14D619DE201D28B80093CB06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D619DC201D28B80093CB06 /* Main.storyboard */; };
 		14D619E0201D28B80093CB06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D619DF201D28B80093CB06 /* Assets.xcassets */; };
 		14D619E3201D28B80093CB06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D619E1201D28B80093CB06 /* LaunchScreen.storyboard */; };
+		14D619F7201D2A620093CB06 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D619F5201D2A620093CB06 /* UserTableViewCell.swift */; };
+		14D619F8201D2A620093CB06 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14D619F6201D2A620093CB06 /* UserTableViewCell.xib */; };
+		14D619FA201D2AED0093CB06 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D619F9201D2AED0093CB06 /* User.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		148482BE201D2E310062825F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				148482C6201D31000062825F /* Components.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		148482C3201D30F50062825F /* Components.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Components.framework; sourceTree = "<group>"; };
 		14D619D5201D28B80093CB06 /* CellViewModelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellViewModelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D619D8201D28B80093CB06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14D619DA201D28B80093CB06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +42,9 @@
 		14D619DF201D28B80093CB06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14D619E2201D28B80093CB06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14D619E4201D28B80093CB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14D619F5201D2A620093CB06 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		14D619F6201D2A620093CB06 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		14D619F9201D2AED0093CB06 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148482C5201D31000062825F /* Components.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +78,66 @@
 		14D619D7201D28B80093CB06 /* CellViewModelDemo */ = {
 			isa = PBXGroup;
 			children = (
-				14D619D8201D28B80093CB06 /* AppDelegate.swift */,
-				14D619DA201D28B80093CB06 /* ViewController.swift */,
-				14D619DC201D28B80093CB06 /* Main.storyboard */,
-				14D619DF201D28B80093CB06 /* Assets.xcassets */,
-				14D619E1201D28B80093CB06 /* LaunchScreen.storyboard */,
-				14D619E4201D28B80093CB06 /* Info.plist */,
+				148482C3201D30F50062825F /* Components.framework */,
+				14D619ED201D29930093CB06 /* Application */,
+				14D619FB201D2AF30093CB06 /* Models */,
+				14D619EC201D29890093CB06 /* ViewControllers */,
+				14D619F0201D29DC0093CB06 /* Cells */,
+				14D619EE201D29BC0093CB06 /* Storyboards */,
+				14D619EF201D29C50093CB06 /* Resources */,
 			);
 			path = CellViewModelDemo;
+			sourceTree = "<group>";
+		};
+		14D619EC201D29890093CB06 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				14D619DA201D28B80093CB06 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		14D619ED201D29930093CB06 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				14D619D8201D28B80093CB06 /* AppDelegate.swift */,
+				14D619E4201D28B80093CB06 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		14D619EE201D29BC0093CB06 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				14D619DC201D28B80093CB06 /* Main.storyboard */,
+				14D619E1201D28B80093CB06 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		14D619EF201D29C50093CB06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14D619DF201D28B80093CB06 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		14D619F0201D29DC0093CB06 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				14D619F5201D2A620093CB06 /* UserTableViewCell.swift */,
+				14D619F6201D2A620093CB06 /* UserTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		14D619FB201D2AF30093CB06 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14D619F9201D2AED0093CB06 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +150,7 @@
 				14D619D1201D28B80093CB06 /* Sources */,
 				14D619D2201D28B80093CB06 /* Frameworks */,
 				14D619D3201D28B80093CB06 /* Resources */,
+				148482BE201D2E310062825F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14D619E3201D28B80093CB06 /* LaunchScreen.storyboard in Resources */,
+				14D619F8201D2A620093CB06 /* UserTableViewCell.xib in Resources */,
 				14D619E0201D28B80093CB06 /* Assets.xcassets in Resources */,
 				14D619DE201D28B80093CB06 /* Main.storyboard in Resources */,
 			);
@@ -136,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14D619FA201D2AED0093CB06 /* User.swift in Sources */,
+				14D619F7201D2A620093CB06 /* UserTableViewCell.swift in Sources */,
 				14D619DB201D28B80093CB06 /* ViewController.swift in Sources */,
 				14D619D9201D28B80093CB06 /* AppDelegate.swift in Sources */,
 			);
@@ -276,7 +356,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69HX7T8G92;
-				INFOPLIST_FILE = CellViewModelDemo/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CellViewModelDemo",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/CellViewModelDemo/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.polant.CellViewModelDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +375,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69HX7T8G92;
-				INFOPLIST_FILE = CellViewModelDemo/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CellViewModelDemo",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/CellViewModelDemo/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.polant.CellViewModelDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
