@@ -13,15 +13,15 @@ public protocol XibInitializable: class {
     static var xibFileName: String { get }
 }
 
-extension XibInitializable where Self: UIView {
+public extension XibInitializable where Self: UIView {
     static var xibFileName: String {
-        return String(describing: type(of: self))
+        return String(describing: self)
     }
 }
 
-extension XibInitializable where Self: UIViewController {
+public extension XibInitializable where Self: UIViewController {
     static var xibFileName: String {
-        return String(describing: type(of: self))
+        return String(describing: self)
     }
     static func instantiateFromXib() -> Self {
         return Self(nibName: xibFileName, bundle: nil)

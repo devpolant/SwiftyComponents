@@ -21,7 +21,7 @@ public protocol CellViewModel: AnyCellViewModel {
     func setup(cell: CellType)
 }
 
-extension CellViewModel {
+public extension CellViewModel {
     static var cellType: ReusableView.Type {
         return CellType.self
     }

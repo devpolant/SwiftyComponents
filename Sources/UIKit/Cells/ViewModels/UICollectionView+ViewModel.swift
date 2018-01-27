@@ -18,17 +18,17 @@ extension UICollectionView {
         return cell
     }
     
-    func register(viewModels: AnyCellViewModel.Type...) {
+    open func register(viewModels: AnyCellViewModel.Type...) {
         for modelType in viewModels {
             let identifier = modelType.cellType.reuseIdentifier
             register(modelType.cellType, forCellWithReuseIdentifier: identifier)
         }
     }
     
-    func register<T: CellViewModel>(nibModel: T.Type) where T.CellType: XibInitializable {
+    open func register<T: CellViewModel>(nibModel: T.Type) where T.CellType: XibInitializable {
         let identifier = nibModel.cellType.reuseIdentifier
         let nibName = T.CellType.xibFileName
-        let nib = UINib(nibName: nibName, bundle: nil)
+        let nib = UINib(nibName: nibName, bundle: Bundle(for: T.CellType.self))
         register(nib, forCellWithReuseIdentifier: identifier)
     }
 }
