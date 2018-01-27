@@ -25,11 +25,10 @@ extension UICollectionView {
         }
     }
     
-    func register(nibModels: AnyCellViewModel.Type...) {
-        for modelType in nibModels {
-            let identifier = modelType.cellType.reuseIdentifier
-            let nib = UINib(nibName: identifier, bundle: nil)
-            register(nib, forCellWithReuseIdentifier: identifier)
-        }
+    func register<T: CellViewModel>(nibModel: T.Type) where T.CellType: XibInitializable {
+        let identifier = nibModel.cellType.reuseIdentifier
+        let nibName = T.CellType.xibFileName
+        let nib = UINib(nibName: nibName, bundle: nil)
+        register(nib, forCellWithReuseIdentifier: identifier)
     }
 }
