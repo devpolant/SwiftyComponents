@@ -9,21 +9,23 @@
 import Foundation
 import UIKit
 
+public typealias ReusableView = UIView & Reusable
+
 public protocol AnyCellViewModel {
-    static var cellType: UIView.Type { get }
-    func setup(cell: UIView)
+    static var cellType: ReusableView.Type { get }
+    func setup(cell: ReusableView)
 }
 
 public protocol CellViewModel: AnyCellViewModel {
-    associatedtype CellType: UIView
+    associatedtype CellType: ReusableView
     func setup(cell: CellType)
 }
 
 extension CellViewModel {
-    static var cellType: UIView.Type {
+    static var cellType: ReusableView.Type {
         return CellType.self
     }
-    func setup(cell: UIView) {
+    func setup(cell: ReusableView) {
         self.setup(cell: cell as! CellType)
     }
 }

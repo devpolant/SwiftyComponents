@@ -9,10 +9,9 @@
 import Foundation
 import UIKit
 
-protocol XibInitializable: class {
+public protocol XibInitializable: class {
     static var xibFileName: String { get }
 }
-
 
 extension XibInitializable where Self: UIView {
     static var xibFileName: String {

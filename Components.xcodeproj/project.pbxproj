@@ -12,6 +12,7 @@
 		14C08304201CADAA006EF08F /* UITableView+ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C08303201CADAA006EF08F /* UITableView+ViewModels.swift */; };
 		14C08306201CAE68006EF08F /* UICollectionView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C08305201CAE68006EF08F /* UICollectionView+ViewModel.swift */; };
 		14C08308201CECCC006EF08F /* XibInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C08307201CECCC006EF08F /* XibInitializable.swift */; };
+		14D619CB201D1C510093CB06 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D619CA201D1C510093CB06 /* Reusable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		14C08303201CADAA006EF08F /* UITableView+ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ViewModels.swift"; sourceTree = "<group>"; };
 		14C08305201CAE68006EF08F /* UICollectionView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ViewModel.swift"; sourceTree = "<group>"; };
 		14C08307201CECCC006EF08F /* XibInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibInitializable.swift; sourceTree = "<group>"; };
+		14D619CA201D1C510093CB06 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				14C08307201CECCC006EF08F /* XibInitializable.swift */,
+				14D619CA201D1C510093CB06 /* Reusable.swift */,
 				14C082FF201CAC7A006EF08F /* ViewModels */,
 			);
 			path = Cells;
@@ -172,6 +175,7 @@
 				14C08308201CECCC006EF08F /* XibInitializable.swift in Sources */,
 				14C08304201CADAA006EF08F /* UITableView+ViewModels.swift in Sources */,
 				14C08302201CACC7006EF08F /* CellViewModel.swift in Sources */,
+				14D619CB201D1C510093CB06 /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

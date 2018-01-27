@@ -12,7 +12,7 @@ import UIKit
 extension UITableView {
     
     open func dequeueReusableCell(withModel viewModel: AnyCellViewModel, for indexPath: IndexPath) -> UITableViewCell {
-        let identifier = String(describing: type(of: viewModel).cellType)
+        let identifier = type(of: viewModel).cellType.reuseIdentifier
         let cell = dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         viewModel.setup(cell: cell)
         return cell
@@ -20,14 +20,14 @@ extension UITableView {
     
     func register(viewModels: AnyCellViewModel.Type...) {
         for modelType in viewModels {
-            let identifier = String(describing: modelType.cellType)
+            let identifier = modelType.cellType.reuseIdentifier
             register(modelType.cellType, forCellReuseIdentifier: identifier)
         }
     }
     
     func register(nibModels: AnyCellViewModel.Type...) {
         for modelType in nibModels {
-            let identifier = String(describing: modelType.cellType)
+            let identifier = modelType.cellType.reuseIdentifier
             let nib = UINib(nibName: identifier, bundle: nil)
             register(nib, forCellReuseIdentifier: identifier)
         }
