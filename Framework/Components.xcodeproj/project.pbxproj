@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14ADC1BF201E86DC0014339D /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC1BE201E86DC0014339D /* ResponseResult.swift */; };
+		14ADC1C1201E87350014339D /* WebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC1C0201E87350014339D /* WebResponse.swift */; };
+		14ADC1C3201E89DF0014339D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC1C2201E89DF0014339D /* APIError.swift */; };
 		14C082F7201CAC65006EF08F /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C082F5201CAC65006EF08F /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14C08302201CACC7006EF08F /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C08301201CACC7006EF08F /* CellViewModel.swift */; };
 		14C08304201CADAA006EF08F /* UITableView+ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C08303201CADAA006EF08F /* UITableView+ViewModels.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14ADC1BE201E86DC0014339D /* ResponseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
+		14ADC1C0201E87350014339D /* WebResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebResponse.swift; sourceTree = "<group>"; };
+		14ADC1C2201E89DF0014339D /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		14C082F2201CAC65006EF08F /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C082F5201CAC65006EF08F /* Components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Components.h; sourceTree = "<group>"; };
 		14C082F6201CAC65006EF08F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +43,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14ADC1BD201E86C30014339D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				14ADC1C4201E8C0B0014339D /* Models */,
+				14ADC1C5201E8C120014339D /* Errors */,
+				14ADC1C6201E8C180014339D /* Parsing */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		14ADC1C4201E8C0B0014339D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14ADC1C0201E87350014339D /* WebResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14ADC1C5201E8C120014339D /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				14ADC1C2201E89DF0014339D /* APIError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		14ADC1C6201E8C180014339D /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				14ADC1BE201E86DC0014339D /* ResponseResult.swift */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
 		14C082E8201CAC65006EF08F = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +96,7 @@
 		14C082F4201CAC65006EF08F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				14ADC1BD201E86C30014339D /* Services */,
 				14C082FD201CAC6C006EF08F /* UIKit */,
 				14C082F5201CAC65006EF08F /* Components.h */,
 				14C082F6201CAC65006EF08F /* Info.plist */,
@@ -173,7 +214,10 @@
 			files = (
 				14C08306201CAE68006EF08F /* UICollectionView+ViewModel.swift in Sources */,
 				14C08308201CECCC006EF08F /* XibInitializable.swift in Sources */,
+				14ADC1C1201E87350014339D /* WebResponse.swift in Sources */,
 				14C08304201CADAA006EF08F /* UITableView+ViewModels.swift in Sources */,
+				14ADC1BF201E86DC0014339D /* ResponseResult.swift in Sources */,
+				14ADC1C3201E89DF0014339D /* APIError.swift in Sources */,
 				14C08302201CACC7006EF08F /* CellViewModel.swift in Sources */,
 				14D619CB201D1C510093CB06 /* Reusable.swift in Sources */,
 			);
