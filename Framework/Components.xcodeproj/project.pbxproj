@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1469FB98201E8DE4001D72D6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1469FB97201E8DE4001D72D6 /* NetworkClient.swift */; };
+		147909F4201E909100F09799 /* URLSessionNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147909F3201E909100F09799 /* URLSessionNetworkClient.swift */; };
+		147909F6201E90A900F09799 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147909F5201E90A900F09799 /* URLRequestConvertible.swift */; };
 		14ADC1BF201E86DC0014339D /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC1BE201E86DC0014339D /* ResponseResult.swift */; };
 		14ADC1C1201E87350014339D /* WebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC1C0201E87350014339D /* WebResponse.swift */; };
 		14ADC1C3201E89DF0014339D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC1C2201E89DF0014339D /* APIError.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1469FB97201E8DE4001D72D6 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		147909F3201E909100F09799 /* URLSessionNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkClient.swift; sourceTree = "<group>"; };
+		147909F5201E90A900F09799 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
 		14ADC1BE201E86DC0014339D /* ResponseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
 		14ADC1C0201E87350014339D /* WebResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebResponse.swift; sourceTree = "<group>"; };
 		14ADC1C2201E89DF0014339D /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
@@ -43,12 +49,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1469FB99201E8DE8001D72D6 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				1469FB97201E8DE4001D72D6 /* NetworkClient.swift */,
+				147909F3201E909100F09799 /* URLSessionNetworkClient.swift */,
+				147909F5201E90A900F09799 /* URLRequestConvertible.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
 		14ADC1BD201E86C30014339D /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				14ADC1C4201E8C0B0014339D /* Models */,
 				14ADC1C5201E8C120014339D /* Errors */,
 				14ADC1C6201E8C180014339D /* Parsing */,
+				1469FB99201E8DE8001D72D6 /* NetworkClient */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -216,7 +233,10 @@
 				14C08308201CECCC006EF08F /* XibInitializable.swift in Sources */,
 				14ADC1C1201E87350014339D /* WebResponse.swift in Sources */,
 				14C08304201CADAA006EF08F /* UITableView+ViewModels.swift in Sources */,
+				147909F4201E909100F09799 /* URLSessionNetworkClient.swift in Sources */,
 				14ADC1BF201E86DC0014339D /* ResponseResult.swift in Sources */,
+				1469FB98201E8DE4001D72D6 /* NetworkClient.swift in Sources */,
+				147909F6201E90A900F09799 /* URLRequestConvertible.swift in Sources */,
 				14ADC1C3201E89DF0014339D /* APIError.swift in Sources */,
 				14C08302201CACC7006EF08F /* CellViewModel.swift in Sources */,
 				14D619CB201D1C510093CB06 /* Reusable.swift in Sources */,

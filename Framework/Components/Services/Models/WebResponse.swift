@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol WebResponseProtocol {
+public protocol WebResponseProtocol {
     associatedtype ResponseData: Decodable
     
     var status: Bool { get }
@@ -16,10 +16,10 @@ protocol WebResponseProtocol {
     var data: ResponseData? { get }
 }
 
-struct WebResponse<T: Decodable>: Decodable, WebResponseProtocol {
-    typealias ResponseData = T
+public struct WebResponse<T: Decodable>: Decodable, WebResponseProtocol {
+    public typealias ResponseData = T
     
-    var status: Bool
-    var error: String?
-    var data: T?
+    public var status: Bool
+    public var error: String?
+    public var data: T?
 }

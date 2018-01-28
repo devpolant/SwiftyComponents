@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ResponseResult<T> {
+public enum ResponseResult<T> {
     case success(T)
     case failure(Error)
 }
@@ -17,11 +17,11 @@ enum ResponseResult<T> {
 
 // MARK: Single Entity
 
-extension ResponseResult where T: WebResponseProtocol {
+public extension ResponseResult where T: WebResponseProtocol {
     
-    typealias ResultType = T.ResponseData
+    public typealias ResultType = T.ResponseData
     
-    func process() -> ResponseResult<ResultType> {
+    public func process() -> ResponseResult<ResultType> {
         switch self {
         case let .success(response):
             if response.status, let data = response.data {
@@ -36,14 +36,14 @@ extension ResponseResult where T: WebResponseProtocol {
 
 // MARK: Collections
 
-protocol JsonArray: RandomAccessCollection { }
+public protocol JsonArray: RandomAccessCollection { }
 extension Array: JsonArray { }
 
-extension ResponseResult where T: WebResponseProtocol, T.ResponseData: JsonArray {
+public extension ResponseResult where T: WebResponseProtocol, T.ResponseData: JsonArray {
     
-    typealias ResultCollection = [T.ResponseData.Element]
+    public typealias ResultCollection = [T.ResponseData.Element]
     
-    func processCollection() -> ResponseResult<ResultCollection> {
+    public func processCollection() -> ResponseResult<ResultCollection> {
         switch self {
         case let .success(response):
             if response.status, let data = response.data {
