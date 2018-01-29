@@ -59,7 +59,7 @@ and can't write something like this:
 private var users: [CellViewModel] = [] // won't compile
 ```
 
-**UITableViewDataSource** implementation is very easy, event if you have multiple cell types, because all logic are contained in our view models:
+**UITableViewDataSource** implementation is very easy, even if you have multiple cell types, because all logic are contained in our view models:
 
 ```Swift
 class ViewController: UIViewController {
