@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1459E93E201FB83500A09D56 /* MKMapView+ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459E93D201FB83500A09D56 /* MKMapView+ViewModels.swift */; };
 		1469FB98201E8DE4001D72D6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1469FB97201E8DE4001D72D6 /* NetworkClient.swift */; };
 		147909F4201E909100F09799 /* URLSessionNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147909F3201E909100F09799 /* URLSessionNetworkClient.swift */; };
 		147909F6201E90A900F09799 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147909F5201E90A900F09799 /* URLRequestConvertible.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1459E93D201FB83500A09D56 /* MKMapView+ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+ViewModels.swift"; sourceTree = "<group>"; };
 		1469FB97201E8DE4001D72D6 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		147909F3201E909100F09799 /* URLSessionNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkClient.swift; sourceTree = "<group>"; };
 		147909F5201E90A900F09799 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				14C08301201CACC7006EF08F /* CellViewModel.swift */,
 				14C08303201CADAA006EF08F /* UITableView+ViewModels.swift */,
 				14C08305201CAE68006EF08F /* UICollectionView+ViewModel.swift */,
+				1459E93D201FB83500A09D56 /* MKMapView+ViewModels.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				14ADC1BF201E86DC0014339D /* ResponseResult.swift in Sources */,
 				1469FB98201E8DE4001D72D6 /* NetworkClient.swift in Sources */,
 				147909F6201E90A900F09799 /* URLRequestConvertible.swift in Sources */,
+				1459E93E201FB83500A09D56 /* MKMapView+ViewModels.swift in Sources */,
 				14ADC1C3201E89DF0014339D /* APIError.swift in Sources */,
 				14C08302201CACC7006EF08F /* CellViewModel.swift in Sources */,
 				14D619CB201D1C510093CB06 /* Reusable.swift in Sources */,

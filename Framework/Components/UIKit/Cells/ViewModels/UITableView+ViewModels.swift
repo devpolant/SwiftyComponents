@@ -17,11 +17,8 @@ extension UITableView {
         return cell
     }
     
-    open func register(viewModels: AnyCellViewModel.Type...) {
-        for modelType in viewModels {
-            let identifier = modelType.reuseIdentifier
-            register(modelType.cellType, forCellReuseIdentifier: identifier)
-        }
+    open func register<T: CellViewModel>(viewModel: T.Type) {
+        register(T.Cell.self, forCellReuseIdentifier: T.reuseIdentifier)
     }
     
     open func register<T: CellViewModel>(nibModel: T.Type) where T.Cell: XibInitializable {
