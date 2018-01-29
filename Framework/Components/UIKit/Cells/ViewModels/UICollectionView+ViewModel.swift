@@ -22,9 +22,7 @@ extension UICollectionView {
     }
     
     open func register<T: CellViewModel>(nibModel: T.Type) where T.Cell: XibInitializable {
-        let identifier = T.reuseIdentifier
-        let nibName = T.Cell.xibFileName
-        let nib = UINib(nibName: nibName, bundle: Bundle(for: T.Cell.self))
-        register(nib, forCellWithReuseIdentifier: identifier)
+        let nib = UINib(nibName: T.Cell.xibFileName, bundle: Bundle(for: T.Cell.self))
+        register(nib, forCellWithReuseIdentifier: T.reuseIdentifier)
     }
 }
