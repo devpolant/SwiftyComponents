@@ -12,6 +12,8 @@ import Components
 // MARK: - View Model
 
 struct UserCellModel: CellViewModel {
+    // Optional 'Reusable' conformance
+    public static let reuseIdentifier: String = "User Cell"
     
     var user: User
     

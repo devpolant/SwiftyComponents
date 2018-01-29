@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		148482C5201D31000062825F /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148482C3201D30F50062825F /* Components.framework */; };
-		148482C6201D31000062825F /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 148482C3201D30F50062825F /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14D619D9201D28B80093CB06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D619D8201D28B80093CB06 /* AppDelegate.swift */; };
 		14D619DB201D28B80093CB06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D619DA201D28B80093CB06 /* ViewController.swift */; };
 		14D619DE201D28B80093CB06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D619DC201D28B80093CB06 /* Main.storyboard */; };
@@ -19,6 +17,16 @@
 		14D619FA201D2AED0093CB06 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D619F9201D2AED0093CB06 /* User.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1459E93B201FAC3000A09D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1459E937201FAC3000A09D56 /* Components.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 14C082F2201CAC65006EF08F;
+			remoteInfo = Components;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		148482BE201D2E310062825F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -26,7 +34,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				148482C6201D31000062825F /* Components.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,7 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		148482C3201D30F50062825F /* Components.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Components.framework; sourceTree = "<group>"; };
+		1459E937201FAC3000A09D56 /* Components.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Components.xcodeproj; path = ../../../Framework/Components.xcodeproj; sourceTree = "<group>"; };
 		14D619D5201D28B80093CB06 /* CellViewModelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellViewModelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D619D8201D28B80093CB06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14D619DA201D28B80093CB06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,13 +59,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				148482C5201D31000062825F /* Components.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1459E938201FAC3000A09D56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1459E93C201FAC3000A09D56 /* Components.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		14D619CC201D28B80093CB06 = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +92,7 @@
 		14D619D7201D28B80093CB06 /* CellViewModelDemo */ = {
 			isa = PBXGroup;
 			children = (
-				148482C3201D30F50062825F /* Components.framework */,
+				1459E937201FAC3000A09D56 /* Components.xcodeproj */,
 				14D619ED201D29930093CB06 /* Application */,
 				14D619FB201D2AF30093CB06 /* Models */,
 				14D619EC201D29890093CB06 /* ViewControllers */,
@@ -188,12 +202,28 @@
 			mainGroup = 14D619CC201D28B80093CB06;
 			productRefGroup = 14D619D6201D28B80093CB06 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1459E938201FAC3000A09D56 /* Products */;
+					ProjectRef = 1459E937201FAC3000A09D56 /* Components.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				14D619D4201D28B80093CB06 /* CellViewModelDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1459E93C201FAC3000A09D56 /* Components.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Components.framework;
+			remoteRef = 1459E93B201FAC3000A09D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		14D619D3201D28B80093CB06 /* Resources */ = {
