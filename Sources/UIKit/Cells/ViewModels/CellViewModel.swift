@@ -6,26 +6,30 @@
 //  Copyright © 2018 Anton Poltoratskyi. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-public typealias ReusableView = UIView & Reusable
+public typealias AnyViewCell = UIView
 
-public protocol AnyCellViewModel {
-    static var cellType: ReusableView.Type { get }
-    func setup(cell: ReusableView)
+public protocol AnyCellViewModel: Reusable {
+    static var cellType: AnyViewCell.Type { get }
+    func setup(cell: AnyViewCell)
+}
+extension AnyCellViewModel {
+    public static var reuseIdentifier: String {
+        return String(describing: cellType)
+    }
 }
 
 public protocol CellViewModel: AnyCellViewModel {
-    associatedtype CellType: ReusableView
-    func setup(cell: CellType)
+    associatedtype Cell: AnyViewCell
+    func setup(cell: Cell)
 }
 
 public extension CellViewModel {
-    static var cellType: ReusableView.Type {
-        return CellType.self
+    static var cellType: AnyViewCell.Type {
+        return Cell.self
     }
-    func setup(cell: ReusableView) {
-        self.setup(cell: cell as! CellType)
+    func setup(cell: AnyViewCell) {
+        self.setup(cell: cell as! Cell)
     }
 }
