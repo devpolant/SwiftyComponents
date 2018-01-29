@@ -91,3 +91,8 @@ extension ViewController: UITableViewDataSource {
 ```
 
 See more implementation details in **Sources** folder.
+
+
+## License
+
+Repository is created under the MIT license. [See LICENSE](https://github.com/AntonPoltoratskyi/Components/blob/master/LICENSE) for details.
