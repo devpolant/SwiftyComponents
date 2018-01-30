@@ -9,7 +9,11 @@
 import UIKit
 import Components
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, KeyboardInteracting {
+    var scrollView: UIScrollView!
+    
+    var keyboardInputViews: [KeyboardInputView]
+    
     
     @IBOutlet weak var tableView: UITableView!
     

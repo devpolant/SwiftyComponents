@@ -25,7 +25,7 @@ extension KeyboardInteracting where Self: UIViewController {
     
     // MARK: Events
     
-    func handleKeyboardShow(userInfo: [AnyHashable: Any]) {
+    public func handleKeyboardShow(userInfo: [AnyHashable: Any]) {
         guard
             let activeInputView = self.activeView,
             let keyboardSize = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.size
@@ -50,7 +50,7 @@ extension KeyboardInteracting where Self: UIViewController {
         }
     }
 
-    func handleKeyboardHide() {
+    public func handleKeyboardHide() {
         setScrollInsets(.zero)
         removeTapGesture()
     }
