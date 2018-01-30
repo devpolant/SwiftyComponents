@@ -17,11 +17,11 @@ extension UITableView {
         return cell
     }
     
-    open func register<T: CellViewModel>(viewModel: T.Type) {
+    open func register<T: CellViewModel>(viewModel: T.Type) where T.Cell: UITableViewCell {
         register(T.Cell.self, forCellReuseIdentifier: T.reuseIdentifier)
     }
     
-    open func register<T: CellViewModel>(nibModel: T.Type) where T.Cell: XibInitializable {
+    open func register<T: CellViewModel>(nibModel: T.Type) where T.Cell: UITableViewCell, T.Cell: XibInitializable {
         let nib = UINib(nibName: T.Cell.xibFileName, bundle: Bundle(for: T.Cell.self))
         register(nib, forCellReuseIdentifier: T.reuseIdentifier)
     }

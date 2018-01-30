@@ -17,11 +17,11 @@ extension UICollectionView {
         return cell
     }
     
-    open func register<T: CellViewModel>(viewModel: T.Type) {
+    open func register<T: CellViewModel>(viewModel: T.Type) where T.Cell: UICollectionViewCell {
         register(T.Cell.self, forCellWithReuseIdentifier: T.reuseIdentifier)
     }
     
-    open func register<T: CellViewModel>(nibModel: T.Type) where T.Cell: XibInitializable {
+    open func register<T: CellViewModel>(nibModel: T.Type) where T.Cell: UICollectionViewCell, T.Cell: XibInitializable {
         let nib = UINib(nibName: T.Cell.xibFileName, bundle: Bundle(for: T.Cell.self))
         register(nib, forCellWithReuseIdentifier: T.reuseIdentifier)
     }
