@@ -12,12 +12,16 @@ public final class URLSessionNetworkClient: NetworkClient {
     
     public var session = URLSession.shared
     
-    public func request<T: Decodable>(to target: URLRequestConvertible, completion: ((ResponseResult<T>) -> Void)?) {
+    @discardableResult
+    public func request<T: Decodable>(to target: URLRequestConvertible, completion: ((ResponseResult<T>) -> Void)?)  -> URLSessionTask {
         let defaultDecoder = JSONDecoder()
-        request(to: target, decoder: defaultDecoder, completion: completion)
+        return request(to: target, decoder: defaultDecoder, completion: completion)
     }
     
-    public func request<T: Decodable>(to target: URLRequestConvertible, decoder: JSONDecoder, completion: ((ResponseResult<T>) -> Void)?) {
+    @discardableResult
+    public func request<T: Decodable>(to target: URLRequestConvertible,
+                                      decoder: JSONDecoder,
+                                      completion: ((ResponseResult<T>) -> Void)?) -> URLSessionTask {
         let urlRequest = target.asURLRequest()
         let task = session.dataTask(with: urlRequest) { data, urlResponse, error in
             if let error = error {
@@ -27,10 +31,12 @@ public final class URLSessionNetworkClient: NetworkClient {
                     let decodedData = try decoder.decode(T.self, from: data)
                     completion?(.success(decodedData))
                 } catch {
-                    completion?(.failure(error))
+                    completion?(.failure(APIError.jsonDecodingError(error)))
                 }
             }
         }
         task.resume()
+        
+        return task
     }
 }

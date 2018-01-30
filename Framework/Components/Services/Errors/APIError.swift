@@ -11,4 +11,5 @@ import Foundation
 enum APIError: Error {
     case invalidToken
     case unknownError
+    case jsonDecodingError(Error)
 }

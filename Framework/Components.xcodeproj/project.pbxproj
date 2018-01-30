@@ -14,6 +14,7 @@
 		14ADC1BF201E86DC0014339D /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC1BE201E86DC0014339D /* ResponseResult.swift */; };
 		14ADC1C1201E87350014339D /* WebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC1C0201E87350014339D /* WebResponse.swift */; };
 		14ADC1C3201E89DF0014339D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC1C2201E89DF0014339D /* APIError.swift */; };
+		14BC1A3520209E8A003AEFBD /* ResponseResult+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BC1A3420209E8A003AEFBD /* ResponseResult+Models.swift */; };
 		14C082F7201CAC65006EF08F /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C082F5201CAC65006EF08F /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14C08302201CACC7006EF08F /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C08301201CACC7006EF08F /* CellViewModel.swift */; };
 		14C08304201CADAA006EF08F /* UITableView+ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C08303201CADAA006EF08F /* UITableView+ViewModels.swift */; };
@@ -30,6 +31,7 @@
 		14ADC1BE201E86DC0014339D /* ResponseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
 		14ADC1C0201E87350014339D /* WebResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebResponse.swift; sourceTree = "<group>"; };
 		14ADC1C2201E89DF0014339D /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		14BC1A3420209E8A003AEFBD /* ResponseResult+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResponseResult+Models.swift"; sourceTree = "<group>"; };
 		14C082F2201CAC65006EF08F /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C082F5201CAC65006EF08F /* Components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Components.h; sourceTree = "<group>"; };
 		14C082F6201CAC65006EF08F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,10 +66,10 @@
 		14ADC1BD201E86C30014339D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1469FB99201E8DE8001D72D6 /* NetworkClient */,
+				14ADC1C6201E8C180014339D /* Response */,
 				14ADC1C4201E8C0B0014339D /* Models */,
 				14ADC1C5201E8C120014339D /* Errors */,
-				14ADC1C6201E8C180014339D /* Parsing */,
-				1469FB99201E8DE8001D72D6 /* NetworkClient */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -88,12 +90,13 @@
 			path = Errors;
 			sourceTree = "<group>";
 		};
-		14ADC1C6201E8C180014339D /* Parsing */ = {
+		14ADC1C6201E8C180014339D /* Response */ = {
 			isa = PBXGroup;
 			children = (
 				14ADC1BE201E86DC0014339D /* ResponseResult.swift */,
+				14BC1A3420209E8A003AEFBD /* ResponseResult+Models.swift */,
 			);
-			path = Parsing;
+			path = Response;
 			sourceTree = "<group>";
 		};
 		14C082E8201CAC65006EF08F = {
@@ -241,6 +244,7 @@
 				1469FB98201E8DE4001D72D6 /* NetworkClient.swift in Sources */,
 				147909F6201E90A900F09799 /* URLRequestConvertible.swift in Sources */,
 				1459E93E201FB83500A09D56 /* MKMapView+ViewModels.swift in Sources */,
+				14BC1A3520209E8A003AEFBD /* ResponseResult+Models.swift in Sources */,
 				14ADC1C3201E89DF0014339D /* APIError.swift in Sources */,
 				14C08302201CACC7006EF08F /* CellViewModel.swift in Sources */,
 				14D619CB201D1C510093CB06 /* Reusable.swift in Sources */,

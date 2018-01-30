@@ -9,6 +9,9 @@
 import Foundation
 
 public protocol NetworkClient: class {
-    func request<T: Decodable>(to target: URLRequestConvertible, completion: ((ResponseResult<T>) -> Void)?)
-    func request<T: Decodable>(to target: URLRequestConvertible, decoder: JSONDecoder, completion: ((ResponseResult<T>) -> Void)?)
+    @discardableResult
+    func request<T: Decodable>(to target: URLRequestConvertible, completion: ((ResponseResult<T>) -> Void)?)  -> URLSessionTask
+    
+    @discardableResult
+    func request<T: Decodable>(to target: URLRequestConvertible, decoder: JSONDecoder, completion: ((ResponseResult<T>) -> Void)?)  -> URLSessionTask
 }

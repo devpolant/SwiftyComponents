@@ -1,21 +1,14 @@
 //
-//  ResponseResult.swift
+//  ResponseResult+Models.swift
 //  Components
 //
-//  Created by Anton Poltoratskyi on 29.01.18.
+//  Created by Anton Poltoratskyi on 30.01.18.
 //  Copyright © 2018 Anton Poltoratskyi. All rights reserved.
 //
 
 import Foundation
 
-public enum ResponseResult<T> {
-    case success(T)
-    case failure(Error)
-}
-
-// MARK: - Parsing
-
-// MARK: Single Entity
+// MARK: - Single Entity
 
 public extension ResponseResult where T: WebResponseProtocol {
     
@@ -34,7 +27,7 @@ public extension ResponseResult where T: WebResponseProtocol {
     }
 }
 
-// MARK: Collections
+// MARK: - Collections
 
 public protocol JsonArray: RandomAccessCollection { }
 extension Array: JsonArray { }
