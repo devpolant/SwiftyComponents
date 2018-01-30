@@ -24,6 +24,8 @@
 		14D6DBEB20210DC5008291D1 /* UITableView+ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBEA20210DC5008291D1 /* UITableView+ReusableCell.swift */; };
 		14D6DBED20210F4E008291D1 /* UICollectionView+ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBEC20210F4E008291D1 /* UICollectionView+ReusableCell.swift */; };
 		14D6DBF2202111C5008291D1 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBF1202111C5008291D1 /* Bundle.swift */; };
+		14D6DBF620211368008291D1 /* Deinitializing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBF420211368008291D1 /* Deinitializing.swift */; };
+		14D6DBF720211368008291D1 /* FatalErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBF520211368008291D1 /* FatalErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		14D6DBEA20210DC5008291D1 /* UITableView+ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ReusableCell.swift"; sourceTree = "<group>"; };
 		14D6DBEC20210F4E008291D1 /* UICollectionView+ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ReusableCell.swift"; sourceTree = "<group>"; };
 		14D6DBF1202111C5008291D1 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		14D6DBF420211368008291D1 /* Deinitializing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deinitializing.swift; sourceTree = "<group>"; };
+		14D6DBF520211368008291D1 /* FatalErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FatalErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 		14C082F4201CAC65006EF08F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				14D6DBF320211349008291D1 /* Debug */,
 				14D6DBEF202111A4008291D1 /* Extensions */,
 				14ADC1BD201E86C30014339D /* Services */,
 				14C082FD201CAC6C006EF08F /* UIKit */,
@@ -186,6 +191,15 @@
 				14D6DBF1202111C5008291D1 /* Bundle.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		14D6DBF320211349008291D1 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				14D6DBF420211368008291D1 /* Deinitializing.swift */,
+				14D6DBF520211368008291D1 /* FatalErrors.swift */,
+			);
+			path = Debug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +287,10 @@
 				14C08308201CECCC006EF08F /* XibInitializable.swift in Sources */,
 				14D6DBEB20210DC5008291D1 /* UITableView+ReusableCell.swift in Sources */,
 				14ADC1C1201E87350014339D /* WebResponse.swift in Sources */,
+				14D6DBF720211368008291D1 /* FatalErrors.swift in Sources */,
 				14C08304201CADAA006EF08F /* UITableView+ViewModels.swift in Sources */,
 				147909F4201E909100F09799 /* URLSessionNetworkClient.swift in Sources */,
+				14D6DBF620211368008291D1 /* Deinitializing.swift in Sources */,
 				14ADC1BF201E86DC0014339D /* ResponseResult.swift in Sources */,
 				1469FB98201E8DE4001D72D6 /* NetworkClient.swift in Sources */,
 				14D6DBED20210F4E008291D1 /* UICollectionView+ReusableCell.swift in Sources */,
