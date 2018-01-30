@@ -13,7 +13,7 @@ import Components
 
 struct UserCellModel: CellViewModel {
     // Optional 'Reusable' conformance
-    public static let reuseIdentifier: String = "User Cell"
+    public static let typeIdentifier: String = "User Cell"
     
     var user: User
     
