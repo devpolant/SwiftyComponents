@@ -13,7 +13,7 @@ This repository will contain some useful iOS code utils and extensions.
 
 ## UI Layer
 
-1. **Work with UITableView & UICollectionView** - one possible approach, inspired by **CocoaHeads**:
+**1. Work with UITableView & UICollectionView** - one possible approach, inspired by **CocoaHeads**:
 
 You can move configuration logic for **UITableViewCell** or **UICollectionViewCell** from **-cellForRowAtIndexPath:** to separate types.
 
@@ -100,6 +100,34 @@ extension ViewController: UITableViewDataSource {
 ```
 
 See implementation details in [Sources](https://github.com/AntonPoltoratskyi/SwiftyComponents/tree/master/Sources/UIKit/Cells) folder.
+
+
+## Extensions
+
+**1. Bundle**
+
+```Swift
+extension Bundle {
+    public var bundleIdentifier: String {
+        return object(forInfoDictionaryKey: kCFBundleIdentifierKey as String) as! String
+    }
+    
+    /// Project bundle name
+    public var bundleName: String {
+        return object(forInfoDictionaryKey: kCFBundleNameKey as String) as! String
+    }
+    
+    /// App name which displaying in Springboard
+    public var displayName: String {
+        let displayName = object(forInfoDictionaryKey: "CFBundleDisplayName") as? String
+        return displayName ?? self.bundleName
+    }
+    
+    public var buildVersion: String? {
+        return object(forInfoDictionaryKey: kCFBundleVersionKey as String) as? String
+    }
+}
+```
 
 
 ## License
