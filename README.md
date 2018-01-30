@@ -28,7 +28,7 @@ public protocol CellViewModel: AnyCellViewModel {
 }
 ```
 
-> UserTableViewCell.swift
+> **UserTableViewCell.swift**
 
 ```Swift
 // MARK: - View Model
@@ -99,7 +99,7 @@ extension ViewController: UITableViewDataSource {
 }
 ```
 
-See more implementation details in **Sources** folder.
+See implementation details in [Sources](https://github.com/AntonPoltoratskyi/SwiftyComponents/tree/master/Sources/UIKit/Cells) folder.
 
 
 ## License
