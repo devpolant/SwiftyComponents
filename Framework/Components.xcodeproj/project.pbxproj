@@ -23,6 +23,7 @@
 		14D619CB201D1C510093CB06 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D619CA201D1C510093CB06 /* Reusable.swift */; };
 		14D6DBEB20210DC5008291D1 /* UITableView+ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBEA20210DC5008291D1 /* UITableView+ReusableCell.swift */; };
 		14D6DBED20210F4E008291D1 /* UICollectionView+ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBEC20210F4E008291D1 /* UICollectionView+ReusableCell.swift */; };
+		14D6DBF2202111C5008291D1 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBF1202111C5008291D1 /* Bundle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		14D619CA201D1C510093CB06 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		14D6DBEA20210DC5008291D1 /* UITableView+ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ReusableCell.swift"; sourceTree = "<group>"; };
 		14D6DBEC20210F4E008291D1 /* UICollectionView+ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ReusableCell.swift"; sourceTree = "<group>"; };
+		14D6DBF1202111C5008291D1 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		14C082F4201CAC65006EF08F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				14D6DBEF202111A4008291D1 /* Extensions */,
 				14ADC1BD201E86C30014339D /* Services */,
 				14C082FD201CAC6C006EF08F /* UIKit */,
 				14C082F5201CAC65006EF08F /* Components.h */,
@@ -167,6 +170,22 @@
 				14D6DBEC20210F4E008291D1 /* UICollectionView+ReusableCell.swift */,
 			);
 			path = DirectCell;
+			sourceTree = "<group>";
+		};
+		14D6DBEF202111A4008291D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				14D6DBF0202111B0008291D1 /* Application */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		14D6DBF0202111B0008291D1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				14D6DBF1202111C5008291D1 /* Bundle.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14C08306201CAE68006EF08F /* UICollectionView+ViewModel.swift in Sources */,
+				14D6DBF2202111C5008291D1 /* Bundle.swift in Sources */,
 				14C08308201CECCC006EF08F /* XibInitializable.swift in Sources */,
 				14D6DBEB20210DC5008291D1 /* UITableView+ReusableCell.swift in Sources */,
 				14ADC1C1201E87350014339D /* WebResponse.swift in Sources */,
