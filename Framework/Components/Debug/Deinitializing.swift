@@ -1,9 +1,9 @@
 //
 //  Deinitializing.swift
-//  LikulatorInst
+//  Components
 //
-//  Created by Anton Poltoratskyi on 12/1/17.
-//  Copyright © 2017 Appus Studio LP. All rights reserved.
+//  Created by Anton Poltoratskyi on 30.01.18.
+//  Copyright © 2018 Anton Poltoratskyi. All rights reserved.
 //
 
 import Foundation

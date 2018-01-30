@@ -26,6 +26,9 @@
 		14D6DBF2202111C5008291D1 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBF1202111C5008291D1 /* Bundle.swift */; };
 		14D6DBF620211368008291D1 /* Deinitializing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBF420211368008291D1 /* Deinitializing.swift */; };
 		14D6DBF720211368008291D1 /* FatalErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBF520211368008291D1 /* FatalErrors.swift */; };
+		14D6DBFA20211427008291D1 /* KeyboardInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBF920211427008291D1 /* KeyboardInteracting.swift */; };
+		14D6DBFC20211480008291D1 /* ClosureTapRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBFB20211480008291D1 /* ClosureTapRecognizer.swift */; };
+		14D6DBFE202115AD008291D1 /* UIViewController+KeyboardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBFD202115AD008291D1 /* UIViewController+KeyboardHandling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		14D6DBF1202111C5008291D1 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		14D6DBF420211368008291D1 /* Deinitializing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deinitializing.swift; sourceTree = "<group>"; };
 		14D6DBF520211368008291D1 /* FatalErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FatalErrors.swift; sourceTree = "<group>"; };
+		14D6DBF920211427008291D1 /* KeyboardInteracting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInteracting.swift; sourceTree = "<group>"; };
+		14D6DBFB20211480008291D1 /* ClosureTapRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureTapRecognizer.swift; sourceTree = "<group>"; };
+		14D6DBFD202115AD008291D1 /* UIViewController+KeyboardHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardHandling.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,7 @@
 		14C082FD201CAC6C006EF08F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				14D6DBF820211407008291D1 /* Keyboard */,
 				14C082FE201CAC73006EF08F /* Cells */,
 			);
 			path = UIKit;
@@ -200,6 +207,16 @@
 				14D6DBF520211368008291D1 /* FatalErrors.swift */,
 			);
 			path = Debug;
+			sourceTree = "<group>";
+		};
+		14D6DBF820211407008291D1 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				14D6DBFB20211480008291D1 /* ClosureTapRecognizer.swift */,
+				14D6DBF920211427008291D1 /* KeyboardInteracting.swift */,
+				14D6DBFD202115AD008291D1 /* UIViewController+KeyboardHandling.swift */,
+			);
+			path = Keyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +304,7 @@
 				14C08308201CECCC006EF08F /* XibInitializable.swift in Sources */,
 				14D6DBEB20210DC5008291D1 /* UITableView+ReusableCell.swift in Sources */,
 				14ADC1C1201E87350014339D /* WebResponse.swift in Sources */,
+				14D6DBFA20211427008291D1 /* KeyboardInteracting.swift in Sources */,
 				14D6DBF720211368008291D1 /* FatalErrors.swift in Sources */,
 				14C08304201CADAA006EF08F /* UITableView+ViewModels.swift in Sources */,
 				147909F4201E909100F09799 /* URLSessionNetworkClient.swift in Sources */,
@@ -299,7 +317,9 @@
 				14BC1A3520209E8A003AEFBD /* ResponseResult+Models.swift in Sources */,
 				14ADC1C3201E89DF0014339D /* APIError.swift in Sources */,
 				14C08302201CACC7006EF08F /* CellViewModel.swift in Sources */,
+				14D6DBFE202115AD008291D1 /* UIViewController+KeyboardHandling.swift in Sources */,
 				14D619CB201D1C510093CB06 /* Reusable.swift in Sources */,
+				14D6DBFC20211480008291D1 /* ClosureTapRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
