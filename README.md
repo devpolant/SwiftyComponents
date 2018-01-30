@@ -7,7 +7,7 @@
 This repository will contain some useful iOS code utils and extensions.
 
 ## Requirements:
-- **iOS** 8.0
+- iOS 9.0+
 - Xcode 9.0+
 - Swift 4.0+
 
