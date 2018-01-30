@@ -17,7 +17,16 @@ This repository will contain some useful iOS code utils and extensions.
 
 You can move configuration logic for **UITableViewCell** or **UICollectionViewCell** from **-cellForRowAtIndexPath:** to separate types.
 
-First, you need to create cell class and appropriate **CellViewModel** type.
+First, you need to create cell class and appropriate type that conforms to **CellViewModel** type:
+
+```Swift
+public typealias AnyViewCell = UIView
+
+public protocol CellViewModel: AnyCellViewModel {
+    associatedtype Cell: AnyViewCell
+    func setup(cell: Cell)
+}
+```
 
 > UserTableViewCell.swift
 
