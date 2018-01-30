@@ -15,7 +15,7 @@ public protocol AnyCellViewModel: Reusable {
     func setup(cell: AnyViewCell)
 }
 extension AnyCellViewModel {
-    public static var reuseIdentifier: String {
+    public static var typeIdentifier: String {
         return String(describing: cellType)
     }
 }

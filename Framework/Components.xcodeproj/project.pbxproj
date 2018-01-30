@@ -21,6 +21,8 @@
 		14C08306201CAE68006EF08F /* UICollectionView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C08305201CAE68006EF08F /* UICollectionView+ViewModel.swift */; };
 		14C08308201CECCC006EF08F /* XibInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C08307201CECCC006EF08F /* XibInitializable.swift */; };
 		14D619CB201D1C510093CB06 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D619CA201D1C510093CB06 /* Reusable.swift */; };
+		14D6DBEB20210DC5008291D1 /* UITableView+ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBEA20210DC5008291D1 /* UITableView+ReusableCell.swift */; };
+		14D6DBED20210F4E008291D1 /* UICollectionView+ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBEC20210F4E008291D1 /* UICollectionView+ReusableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		14C08305201CAE68006EF08F /* UICollectionView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ViewModel.swift"; sourceTree = "<group>"; };
 		14C08307201CECCC006EF08F /* XibInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibInitializable.swift; sourceTree = "<group>"; };
 		14D619CA201D1C510093CB06 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		14D6DBEA20210DC5008291D1 /* UITableView+ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ReusableCell.swift"; sourceTree = "<group>"; };
+		14D6DBEC20210F4E008291D1 /* UICollectionView+ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ReusableCell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 				14C08307201CECCC006EF08F /* XibInitializable.swift */,
 				14D619CA201D1C510093CB06 /* Reusable.swift */,
 				14C082FF201CAC7A006EF08F /* ViewModels */,
+				14D6DBE920210D9A008291D1 /* DirectCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -153,6 +158,15 @@
 				1459E93D201FB83500A09D56 /* MKMapView+ViewModels.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		14D6DBE920210D9A008291D1 /* DirectCell */ = {
+			isa = PBXGroup;
+			children = (
+				14D6DBEA20210DC5008291D1 /* UITableView+ReusableCell.swift */,
+				14D6DBEC20210F4E008291D1 /* UICollectionView+ReusableCell.swift */,
+			);
+			path = DirectCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,11 +251,13 @@
 			files = (
 				14C08306201CAE68006EF08F /* UICollectionView+ViewModel.swift in Sources */,
 				14C08308201CECCC006EF08F /* XibInitializable.swift in Sources */,
+				14D6DBEB20210DC5008291D1 /* UITableView+ReusableCell.swift in Sources */,
 				14ADC1C1201E87350014339D /* WebResponse.swift in Sources */,
 				14C08304201CADAA006EF08F /* UITableView+ViewModels.swift in Sources */,
 				147909F4201E909100F09799 /* URLSessionNetworkClient.swift in Sources */,
 				14ADC1BF201E86DC0014339D /* ResponseResult.swift in Sources */,
 				1469FB98201E8DE4001D72D6 /* NetworkClient.swift in Sources */,
+				14D6DBED20210F4E008291D1 /* UICollectionView+ReusableCell.swift in Sources */,
 				147909F6201E90A900F09799 /* URLRequestConvertible.swift in Sources */,
 				1459E93E201FB83500A09D56 /* MKMapView+ViewModels.swift in Sources */,
 				14BC1A3520209E8A003AEFBD /* ResponseResult+Models.swift in Sources */,
