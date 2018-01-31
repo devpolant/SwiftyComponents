@@ -6,7 +6,6 @@
 //  Copyright © 2018 Anton Poltoratskyi. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 public protocol XibInitializable: class {
