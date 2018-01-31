@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1459E93E201FB83500A09D56 /* MKMapView+ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459E93D201FB83500A09D56 /* MKMapView+ViewModels.swift */; };
+		145E0E522021DFFD003B757D /* UIView+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E0E512021DFFD003B757D /* UIView+Shake.swift */; };
 		1469FB98201E8DE4001D72D6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1469FB97201E8DE4001D72D6 /* NetworkClient.swift */; };
 		147909F4201E909100F09799 /* URLSessionNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147909F3201E909100F09799 /* URLSessionNetworkClient.swift */; };
 		147909F6201E90A900F09799 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147909F5201E90A900F09799 /* URLRequestConvertible.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		1459E93D201FB83500A09D56 /* MKMapView+ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+ViewModels.swift"; sourceTree = "<group>"; };
+		145E0E512021DFFD003B757D /* UIView+Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shake.swift"; sourceTree = "<group>"; };
 		1469FB97201E8DE4001D72D6 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		147909F3201E909100F09799 /* URLSessionNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkClient.swift; sourceTree = "<group>"; };
 		147909F5201E90A900F09799 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		145E0E502021DFEB003B757D /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				145E0E512021DFFD003B757D /* UIView+Shake.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		1469FB99201E8DE8001D72D6 /* NetworkClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +157,7 @@
 		14C082FD201CAC6C006EF08F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				145E0E502021DFEB003B757D /* Animations */,
 				14D6DBF820211407008291D1 /* Keyboard */,
 				14C082FE201CAC73006EF08F /* Cells */,
 			);
@@ -312,6 +323,7 @@
 				14ADC1BF201E86DC0014339D /* ResponseResult.swift in Sources */,
 				1469FB98201E8DE4001D72D6 /* NetworkClient.swift in Sources */,
 				14D6DBED20210F4E008291D1 /* UICollectionView+ReusableCell.swift in Sources */,
+				145E0E522021DFFD003B757D /* UIView+Shake.swift in Sources */,
 				147909F6201E90A900F09799 /* URLRequestConvertible.swift in Sources */,
 				1459E93E201FB83500A09D56 /* MKMapView+ViewModels.swift in Sources */,
 				14BC1A3520209E8A003AEFBD /* ResponseResult+Models.swift in Sources */,
