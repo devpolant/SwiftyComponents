@@ -102,6 +102,87 @@ extension ViewController: UITableViewDataSource {
 See implementation details in [Sources](https://github.com/AntonPoltoratskyi/SwiftyComponents/tree/master/Sources/UIKit/Cells) folder.
 
 
+**2. Keyboard Handling**
+
+Conform your view controller to **KeyboardInteracting** protocol:
+
+```Swift
+public typealias KeyboardInputView = UIView & UITextInput
+
+public protocol KeyboardInteracting: class {
+    var scrollView: UIScrollView! { get }
+    var keyboardInputViews: [KeyboardInputView] { get }
+    
+    func handleKeyboardShow(userInfo: [AnyHashable: Any])
+    func handleKeyboardHide()
+}
+
+extension KeyboardInteracting where Self: UIViewController {
+
+    func handleKeyboardShow(userInfo: [AnyHashable: Any]) {
+        /// ...
+    }
+
+    func handleKeyboardHide() {
+        // ...
+    }
+}
+```
+[KeyboardInteracting.swift](https://github.com/AntonPoltoratskyi/SwiftyComponents/blob/master/Sources/UIKit/Keyboard/KeyboardInteracting.swift)
+
+Register and unregister for keyboard notifications:
+
+```Swift
+extension UIViewController {
+    public func registerForKeyboardNotifications() {
+        let center = NotificationCenter.default
+        center.addObserver(self, selector: #selector(keyboardDidShow(notification:)), name: .UIKeyboardDidShow, object: nil)
+        center.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: .UIKeyboardWillHide, object: nil)
+    }
+    
+    public func unregisterForKeyboardNotifications() {
+        let center = NotificationCenter.default
+        center.removeObserver(self, name: .UIKeyboardDidShow, object: nil)
+        center.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
+    }
+    
+    @objc private func keyboardDidShow(notification: Notification) {
+        guard let userInfo = notification.userInfo else { return }
+        (self as? KeyboardInteracting)?.handleKeyboardShow(userInfo: userInfo)
+    }
+    
+    @objc private func keyboardWillHide(notification: Notification) {
+        (self as? KeyboardInteracting)?.handleKeyboardHide()
+    }
+}
+```
+
+And handle UIViewController life cycle:
+
+```Swift
+class ViewController: UIViewController, KeyboardInteracting {
+    var scrollView: UIScrollView!
+    
+    var keyboardInputViews: [KeyboardInputView] {
+        // return an array of your input views
+        return [] 
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        registerForKeyboardNotifications()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        unregisterForKeyboardNotifications()
+    }
+    
+    // ...
+}
+```
+
+
 ## Extensions
 
 **1. Bundle**
