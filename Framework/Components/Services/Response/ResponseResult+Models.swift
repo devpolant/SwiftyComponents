@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - Single Entity
 
-public extension ResponseResult where T: WebResponseProtocol {
+public extension ResponseResult where T: ResponseRepresentable {
     
     public typealias ResultType = T.ResponseData
     
@@ -32,7 +32,7 @@ public extension ResponseResult where T: WebResponseProtocol {
 public protocol JsonArray: RandomAccessCollection { }
 extension Array: JsonArray { }
 
-public extension ResponseResult where T: WebResponseProtocol, T.ResponseData: JsonArray {
+public extension ResponseResult where T: ResponseRepresentable, T.ResponseData: JsonArray {
     
     public typealias ResultCollection = [T.ResponseData.Element]
     

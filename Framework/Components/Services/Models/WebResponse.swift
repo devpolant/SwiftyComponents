@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol WebResponseProtocol {
+public protocol ResponseRepresentable {
     associatedtype ResponseData: Decodable
     
     var status: Bool { get }
@@ -16,7 +16,7 @@ public protocol WebResponseProtocol {
     var data: ResponseData? { get }
 }
 
-public struct WebResponse<T: Decodable>: Decodable, WebResponseProtocol {
+public struct WebResponse<T: Decodable>: Decodable, ResponseRepresentable {
     public typealias ResponseData = T
     
     public var status: Bool
