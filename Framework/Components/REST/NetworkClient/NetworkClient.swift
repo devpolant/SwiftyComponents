@@ -15,3 +15,12 @@ public protocol NetworkClient: class {
     @discardableResult
     func request<T: Decodable>(to target: URLRequestConvertible, decoder: JSONDecoder, completion: ((ResponseResult<T>) -> Void)?)  -> URLSessionTask
 }
+
+extension NetworkClient {
+    
+    @discardableResult
+    public func request<T: Decodable>(to target: URLRequestConvertible, completion: ((ResponseResult<T>) -> Void)?)  -> URLSessionTask {
+        let defaultDecoder = JSONDecoder()
+        return request(to: target, decoder: defaultDecoder, completion: completion)
+    }
+}
