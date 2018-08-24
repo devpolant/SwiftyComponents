@@ -16,7 +16,8 @@ public final class ClosureTapRecognizer: UITapGestureRecognizer {
     public init(identifier: String, action: ((UITapGestureRecognizer) -> Void)? = nil) {
         self.identifier = identifier
         self.action = action
-        super.init(target: self, action: #selector(tapDidRecognized(recognizer:)))
+        super.init(target: nil, action: nil)
+        addTarget(self, action: #selector(tapDidRecognized(recognizer:)))
     }
     
     @objc private func tapDidRecognized(recognizer: UITapGestureRecognizer) {

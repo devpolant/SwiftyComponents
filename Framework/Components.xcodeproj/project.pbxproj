@@ -30,6 +30,9 @@
 		14D6DBFA20211427008291D1 /* KeyboardInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBF920211427008291D1 /* KeyboardInteracting.swift */; };
 		14D6DBFC20211480008291D1 /* ClosureTapRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBFB20211480008291D1 /* ClosureTapRecognizer.swift */; };
 		14D6DBFE202115AD008291D1 /* UIViewController+KeyboardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBFD202115AD008291D1 /* UIViewController+KeyboardHandling.swift */; };
+		8511CE32213048BE0097EC73 /* HorizontalPanGestureGecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE31213048BE0097EC73 /* HorizontalPanGestureGecognizer.swift */; };
+		8511CE3421304B3D0097EC73 /* VerticalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE3321304B3D0097EC73 /* VerticalPanGestureRecognizer.swift */; };
+		8511CE3621304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE3521304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		14D6DBF920211427008291D1 /* KeyboardInteracting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInteracting.swift; sourceTree = "<group>"; };
 		14D6DBFB20211480008291D1 /* ClosureTapRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureTapRecognizer.swift; sourceTree = "<group>"; };
 		14D6DBFD202115AD008291D1 /* UIViewController+KeyboardHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardHandling.swift"; sourceTree = "<group>"; };
+		8511CE31213048BE0097EC73 /* HorizontalPanGestureGecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPanGestureGecognizer.swift; sourceTree = "<group>"; };
+		8511CE3321304B3D0097EC73 /* VerticalPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		8511CE3521304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidirectionalPanGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,7 @@
 				145E0E502021DFEB003B757D /* Animations */,
 				14D6DBF820211407008291D1 /* Keyboard */,
 				14C082FE201CAC73006EF08F /* Cells */,
+				8511CE302130488B0097EC73 /* Gestures */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -223,11 +230,21 @@
 		14D6DBF820211407008291D1 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
-				14D6DBFB20211480008291D1 /* ClosureTapRecognizer.swift */,
 				14D6DBF920211427008291D1 /* KeyboardInteracting.swift */,
 				14D6DBFD202115AD008291D1 /* UIViewController+KeyboardHandling.swift */,
 			);
 			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		8511CE302130488B0097EC73 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				14D6DBFB20211480008291D1 /* ClosureTapRecognizer.swift */,
+				8511CE3521304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift */,
+				8511CE31213048BE0097EC73 /* HorizontalPanGestureGecognizer.swift */,
+				8511CE3321304B3D0097EC73 /* VerticalPanGestureRecognizer.swift */,
+			);
+			path = Gestures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +336,7 @@
 				14D6DBF720211368008291D1 /* FatalErrors.swift in Sources */,
 				14C08304201CADAA006EF08F /* UITableView+ViewModels.swift in Sources */,
 				147909F4201E909100F09799 /* URLSessionNetworkClient.swift in Sources */,
+				8511CE3421304B3D0097EC73 /* VerticalPanGestureRecognizer.swift in Sources */,
 				14D6DBF620211368008291D1 /* Deinitializing.swift in Sources */,
 				14ADC1BF201E86DC0014339D /* ResponseResult.swift in Sources */,
 				1469FB98201E8DE4001D72D6 /* NetworkClient.swift in Sources */,
@@ -329,7 +347,9 @@
 				14BC1A3520209E8A003AEFBD /* ResponseResult+Models.swift in Sources */,
 				14ADC1C3201E89DF0014339D /* APIError.swift in Sources */,
 				14C08302201CACC7006EF08F /* CellViewModel.swift in Sources */,
+				8511CE32213048BE0097EC73 /* HorizontalPanGestureGecognizer.swift in Sources */,
 				14D6DBFE202115AD008291D1 /* UIViewController+KeyboardHandling.swift in Sources */,
+				8511CE3621304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift in Sources */,
 				14D619CB201D1C510093CB06 /* Reusable.swift in Sources */,
 				14D6DBFC20211480008291D1 /* ClosureTapRecognizer.swift in Sources */,
 			);
