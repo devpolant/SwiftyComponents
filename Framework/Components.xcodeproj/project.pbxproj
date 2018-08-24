@@ -34,6 +34,7 @@
 		8511CE3421304B3D0097EC73 /* VerticalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE3321304B3D0097EC73 /* VerticalPanGestureRecognizer.swift */; };
 		8511CE3621304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE3521304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift */; };
 		8511CE38213050160097EC73 /* ClosureGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE37213050160097EC73 /* ClosureGestureRecognizer.swift */; };
+		8511CE3B21305AC10097EC73 /* Weakable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE3A21305AC10097EC73 /* Weakable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		8511CE3321304B3D0097EC73 /* VerticalPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		8511CE3521304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidirectionalPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		8511CE37213050160097EC73 /* ClosureGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureGestureRecognizer.swift; sourceTree = "<group>"; };
+		8511CE3A21305AC10097EC73 /* Weakable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weakable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +99,7 @@
 			path = NetworkClient;
 			sourceTree = "<group>";
 		};
-		14ADC1BD201E86C30014339D /* Services */ = {
+		14ADC1BD201E86C30014339D /* REST */ = {
 			isa = PBXGroup;
 			children = (
 				1469FB99201E8DE8001D72D6 /* NetworkClient */,
@@ -105,7 +107,7 @@
 				14ADC1C4201E8C0B0014339D /* Models */,
 				14ADC1C5201E8C120014339D /* Errors */,
 			);
-			path = Services;
+			path = REST;
 			sourceTree = "<group>";
 		};
 		14ADC1C4201E8C0B0014339D /* Models */ = {
@@ -154,7 +156,8 @@
 			children = (
 				14D6DBF320211349008291D1 /* Debug */,
 				14D6DBEF202111A4008291D1 /* Extensions */,
-				14ADC1BD201E86C30014339D /* Services */,
+				14ADC1BD201E86C30014339D /* REST */,
+				8511CE3921305A820097EC73 /* ARC */,
 				14C082FD201CAC6C006EF08F /* UIKit */,
 				14C082F5201CAC65006EF08F /* Components.h */,
 				14C082F6201CAC65006EF08F /* Info.plist */,
@@ -248,6 +251,14 @@
 				8511CE3321304B3D0097EC73 /* VerticalPanGestureRecognizer.swift */,
 			);
 			path = Gestures;
+			sourceTree = "<group>";
+		};
+		8511CE3921305A820097EC73 /* ARC */ = {
+			isa = PBXGroup;
+			children = (
+				8511CE3A21305AC10097EC73 /* Weakable.swift */,
+			);
+			path = ARC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +365,7 @@
 				8511CE32213048BE0097EC73 /* HorizontalPanGestureGecognizer.swift in Sources */,
 				14D6DBFE202115AD008291D1 /* UIViewController+KeyboardHandling.swift in Sources */,
 				8511CE3621304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift in Sources */,
+				8511CE3B21305AC10097EC73 /* Weakable.swift in Sources */,
 				14D619CB201D1C510093CB06 /* Reusable.swift in Sources */,
 				14D6DBFC20211480008291D1 /* ClosureTapRecognizer.swift in Sources */,
 			);
