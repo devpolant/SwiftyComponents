@@ -33,6 +33,7 @@
 		8511CE32213048BE0097EC73 /* HorizontalPanGestureGecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE31213048BE0097EC73 /* HorizontalPanGestureGecognizer.swift */; };
 		8511CE3421304B3D0097EC73 /* VerticalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE3321304B3D0097EC73 /* VerticalPanGestureRecognizer.swift */; };
 		8511CE3621304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE3521304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift */; };
+		8511CE38213050160097EC73 /* ClosureGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE37213050160097EC73 /* ClosureGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		8511CE31213048BE0097EC73 /* HorizontalPanGestureGecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPanGestureGecognizer.swift; sourceTree = "<group>"; };
 		8511CE3321304B3D0097EC73 /* VerticalPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		8511CE3521304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidirectionalPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		8511CE37213050160097EC73 /* ClosureGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				14D6DBFB20211480008291D1 /* ClosureTapRecognizer.swift */,
+				8511CE37213050160097EC73 /* ClosureGestureRecognizer.swift */,
 				8511CE3521304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift */,
 				8511CE31213048BE0097EC73 /* HorizontalPanGestureGecognizer.swift */,
 				8511CE3321304B3D0097EC73 /* VerticalPanGestureRecognizer.swift */,
@@ -342,6 +345,7 @@
 				1469FB98201E8DE4001D72D6 /* NetworkClient.swift in Sources */,
 				14D6DBED20210F4E008291D1 /* UICollectionView+ReusableCell.swift in Sources */,
 				145E0E522021DFFD003B757D /* UIView+Shake.swift in Sources */,
+				8511CE38213050160097EC73 /* ClosureGestureRecognizer.swift in Sources */,
 				147909F6201E90A900F09799 /* URLRequestConvertible.swift in Sources */,
 				1459E93E201FB83500A09D56 /* MKMapView+ViewModels.swift in Sources */,
 				14BC1A3520209E8A003AEFBD /* ResponseResult+Models.swift in Sources */,
