@@ -28,7 +28,7 @@ extension KeyboardInteracting where Self: UIViewController {
     public func handleKeyboardShow(userInfo: [AnyHashable: Any]) {
         guard
             let activeInputView = self.activeView,
-            let keyboardSize = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.size
+            let keyboardSize = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.size
         else {
             return
         }

@@ -13,19 +13,19 @@ extension UIViewController {
         let center = NotificationCenter.default
         center.addObserver(self,
                            selector: #selector(keyboardDidShow(notification:)),
-                           name: .UIKeyboardDidShow,
+                           name: UIResponder.keyboardDidShowNotification,
                            object: nil)
         
         center.addObserver(self,
                            selector: #selector(keyboardWillHide(notification:)),
-                           name: .UIKeyboardWillHide,
+                           name: UIResponder.keyboardWillHideNotification,
                            object: nil)
     }
     
     public func unregisterForKeyboardNotifications() {
         let center = NotificationCenter.default
-        center.removeObserver(self, name: .UIKeyboardDidShow, object: nil)
-        center.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
+        center.removeObserver(self, name: UIResponder.keyboardDidShowNotification, object: nil)
+        center.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     @objc private func keyboardDidShow(notification: Notification) {
