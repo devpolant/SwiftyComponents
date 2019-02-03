@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol Reusable {
-    static var typeIdentifier: String { get }
+    static var uniqueIdentifier: String { get }
 }

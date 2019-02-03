@@ -15,7 +15,7 @@ public protocol AnyCellViewModel: Reusable {
     func setup(cell: AnyViewCell)
 }
 extension AnyCellViewModel {
-    public static var typeIdentifier: String {
+    public static var uniqueIdentifier: String {
         return String(describing: cellType)
     }
 }
@@ -25,11 +25,11 @@ public protocol CellViewModel: AnyCellViewModel {
     func setup(cell: Cell)
 }
 
-public extension CellViewModel {
-    static var cellType: AnyViewCell.Type {
+extension CellViewModel {
+    public static var cellType: AnyViewCell.Type {
         return Cell.self
     }
-    func setup(cell: AnyViewCell) {
+    public func setup(cell: AnyViewCell) {
         self.setup(cell: cell as! Cell)
     }
 }
