@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		1459E93E201FB83500A09D56 /* MKMapView+ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459E93D201FB83500A09D56 /* MKMapView+ViewModels.swift */; };
 		145E0E522021DFFD003B757D /* UIView+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E0E512021DFFD003B757D /* UIView+Shake.swift */; };
-		1469FB98201E8DE4001D72D6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1469FB97201E8DE4001D72D6 /* NetworkClient.swift */; };
-		147909F4201E909100F09799 /* URLSessionNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147909F3201E909100F09799 /* URLSessionNetworkClient.swift */; };
-		147909F6201E90A900F09799 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147909F5201E90A900F09799 /* URLRequestConvertible.swift */; };
 		14ADC1BF201E86DC0014339D /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC1BE201E86DC0014339D /* ResponseResult.swift */; };
 		14ADC1C1201E87350014339D /* WebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC1C0201E87350014339D /* WebResponse.swift */; };
 		14ADC1C3201E89DF0014339D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC1C2201E89DF0014339D /* APIError.swift */; };
@@ -35,14 +32,49 @@
 		8511CE3621304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE3521304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift */; };
 		8511CE38213050160097EC73 /* ClosureGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE37213050160097EC73 /* ClosureGestureRecognizer.swift */; };
 		8511CE3B21305AC10097EC73 /* Weakable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE3A21305AC10097EC73 /* Weakable.swift */; };
+		8540327422071A4100397B3F /* AppGroupFlagObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540326A22071A4100397B3F /* AppGroupFlagObserver.swift */; };
+		8540327522071A4100397B3F /* DirectoryWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540326B22071A4100397B3F /* DirectoryWatcher.swift */; };
+		8540327622071A4100397B3F /* AppGroupFlagContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540326C22071A4100397B3F /* AppGroupFlagContainer.swift */; };
+		8540327722071A4100397B3F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540326D22071A4100397B3F /* Logger.swift */; };
+		8540327822071A4100397B3F /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540326E22071A4100397B3F /* AsyncOperation.swift */; };
+		8540327922071A4100397B3F /* BBCodeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540327022071A4100397B3F /* BBCodeEntity.swift */; };
+		8540327A22071A4100397B3F /* BBCodeElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540327122071A4100397B3F /* BBCodeElement.swift */; };
+		8540327B22071A4100397B3F /* BBTagBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540327222071A4100397B3F /* BBTagBuilder.swift */; };
+		8540327C22071A4100397B3F /* BBCodeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540327322071A4100397B3F /* BBCodeParser.swift */; };
+		8540328B22071ACA00397B3F /* TextInputUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540327E22071AC900397B3F /* TextInputUtils.swift */; };
+		8540328C22071ACA00397B3F /* UITextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540327F22071AC900397B3F /* UITextInput.swift */; };
+		8540328D22071ACA00397B3F /* NSAttributedString+Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540328022071AC900397B3F /* NSAttributedString+Bounds.swift */; };
+		8540328F22071ACA00397B3F /* String+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540328222071ACA00397B3F /* String+Search.swift */; };
+		8540329022071ACA00397B3F /* UIScreen+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540328322071ACA00397B3F /* UIScreen+Keyboard.swift */; };
+		8540329122071ACA00397B3F /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540328422071ACA00397B3F /* UIStackView.swift */; };
+		8540329222071ACA00397B3F /* Collection+ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540328522071ACA00397B3F /* Collection+ViewLayout.swift */; };
+		8540329322071ACA00397B3F /* CollectionsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540328622071ACA00397B3F /* CollectionsExtensions.swift */; };
+		8540329422071ACA00397B3F /* BidirectionalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540328722071ACA00397B3F /* BidirectionalCollection.swift */; };
+		8540329522071ACA00397B3F /* UICollectionViewFlowLayout+ItemSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540328A22071ACA00397B3F /* UICollectionViewFlowLayout+ItemSize.swift */; };
+		8540329E22071BDF00397B3F /* LinkRecognizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540329A22071BDF00397B3F /* LinkRecognizable.swift */; };
+		8540329F22071BDF00397B3F /* LinkLongPressGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540329B22071BDF00397B3F /* LinkLongPressGestureRecognizer.swift */; };
+		854032A022071BDF00397B3F /* LinkTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540329C22071BDF00397B3F /* LinkTapGestureRecognizer.swift */; };
+		854032A122071BDF00397B3F /* LongPressClosureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540329D22071BDF00397B3F /* LongPressClosureRecognizer.swift */; };
+		854032AC22071C3600397B3F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032A322071C3600397B3F /* HTTPMethod.swift */; };
+		854032AD22071C3600397B3F /* HTTPParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032A422071C3600397B3F /* HTTPParameters.swift */; };
+		854032AE22071C3600397B3F /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032A522071C3600397B3F /* HTTPHeaders.swift */; };
+		854032AF22071C3600397B3F /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032A722071C3600397B3F /* NetworkClient.swift */; };
+		854032B022071C3600397B3F /* URLSessionNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032A822071C3600397B3F /* URLSessionNetworkClient.swift */; };
+		854032B122071C3600397B3F /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032AA22071C3600397B3F /* NetworkRouter.swift */; };
+		854032B222071C3600397B3F /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032AB22071C3600397B3F /* URLRequestConvertible.swift */; };
+		854032BE22071C9100397B3F /* AlertTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032B422071C9100397B3F /* AlertTextFieldController.swift */; };
+		854032BF22071C9100397B3F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032B522071C9100397B3F /* Alert.swift */; };
+		854032C022071C9100397B3F /* SecureCodeContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032B722071C9100397B3F /* SecureCodeContainerView.swift */; };
+		854032C122071C9100397B3F /* SecureCodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032B822071C9100397B3F /* SecureCodeInputView.swift */; };
+		854032C222071C9100397B3F /* RecordingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032BA22071C9100397B3F /* RecordingIndicatorView.swift */; };
+		854032C322071C9100397B3F /* TypingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032BB22071C9100397B3F /* TypingIndicatorView.swift */; };
+		854032C422071C9100397B3F /* TypingBoldIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032BC22071C9100397B3F /* TypingBoldIndicatorView.swift */; };
+		854032C522071C9100397B3F /* TypingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032BD22071C9100397B3F /* TypingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1459E93D201FB83500A09D56 /* MKMapView+ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+ViewModels.swift"; sourceTree = "<group>"; };
 		145E0E512021DFFD003B757D /* UIView+Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shake.swift"; sourceTree = "<group>"; };
-		1469FB97201E8DE4001D72D6 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
-		147909F3201E909100F09799 /* URLSessionNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkClient.swift; sourceTree = "<group>"; };
-		147909F5201E90A900F09799 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
 		14ADC1BE201E86DC0014339D /* ResponseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
 		14ADC1C0201E87350014339D /* WebResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebResponse.swift; sourceTree = "<group>"; };
 		14ADC1C2201E89DF0014339D /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
@@ -68,6 +100,44 @@
 		8511CE3521304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidirectionalPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		8511CE37213050160097EC73 /* ClosureGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureGestureRecognizer.swift; sourceTree = "<group>"; };
 		8511CE3A21305AC10097EC73 /* Weakable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weakable.swift; sourceTree = "<group>"; };
+		8540326A22071A4100397B3F /* AppGroupFlagObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGroupFlagObserver.swift; sourceTree = "<group>"; };
+		8540326B22071A4100397B3F /* DirectoryWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryWatcher.swift; sourceTree = "<group>"; };
+		8540326C22071A4100397B3F /* AppGroupFlagContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGroupFlagContainer.swift; sourceTree = "<group>"; };
+		8540326D22071A4100397B3F /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		8540326E22071A4100397B3F /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		8540327022071A4100397B3F /* BBCodeEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBCodeEntity.swift; sourceTree = "<group>"; };
+		8540327122071A4100397B3F /* BBCodeElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBCodeElement.swift; sourceTree = "<group>"; };
+		8540327222071A4100397B3F /* BBTagBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBTagBuilder.swift; sourceTree = "<group>"; };
+		8540327322071A4100397B3F /* BBCodeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBCodeParser.swift; sourceTree = "<group>"; };
+		8540327E22071AC900397B3F /* TextInputUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputUtils.swift; sourceTree = "<group>"; };
+		8540327F22071AC900397B3F /* UITextInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextInput.swift; sourceTree = "<group>"; };
+		8540328022071AC900397B3F /* NSAttributedString+Bounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Bounds.swift"; sourceTree = "<group>"; };
+		8540328222071ACA00397B3F /* String+Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Search.swift"; sourceTree = "<group>"; };
+		8540328322071ACA00397B3F /* UIScreen+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Keyboard.swift"; sourceTree = "<group>"; };
+		8540328422071ACA00397B3F /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		8540328522071ACA00397B3F /* Collection+ViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+ViewLayout.swift"; sourceTree = "<group>"; };
+		8540328622071ACA00397B3F /* CollectionsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionsExtensions.swift; sourceTree = "<group>"; };
+		8540328722071ACA00397B3F /* BidirectionalCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BidirectionalCollection.swift; sourceTree = "<group>"; };
+		8540328A22071ACA00397B3F /* UICollectionViewFlowLayout+ItemSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+ItemSize.swift"; sourceTree = "<group>"; };
+		8540329A22071BDF00397B3F /* LinkRecognizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkRecognizable.swift; sourceTree = "<group>"; };
+		8540329B22071BDF00397B3F /* LinkLongPressGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkLongPressGestureRecognizer.swift; sourceTree = "<group>"; };
+		8540329C22071BDF00397B3F /* LinkTapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkTapGestureRecognizer.swift; sourceTree = "<group>"; };
+		8540329D22071BDF00397B3F /* LongPressClosureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongPressClosureRecognizer.swift; sourceTree = "<group>"; };
+		854032A322071C3600397B3F /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		854032A422071C3600397B3F /* HTTPParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPParameters.swift; sourceTree = "<group>"; };
+		854032A522071C3600397B3F /* HTTPHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		854032A722071C3600397B3F /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		854032A822071C3600397B3F /* URLSessionNetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkClient.swift; sourceTree = "<group>"; };
+		854032AA22071C3600397B3F /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		854032AB22071C3600397B3F /* URLRequestConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
+		854032B422071C9100397B3F /* AlertTextFieldController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTextFieldController.swift; sourceTree = "<group>"; };
+		854032B522071C9100397B3F /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		854032B722071C9100397B3F /* SecureCodeContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureCodeContainerView.swift; sourceTree = "<group>"; };
+		854032B822071C9100397B3F /* SecureCodeInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureCodeInputView.swift; sourceTree = "<group>"; };
+		854032BA22071C9100397B3F /* RecordingIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingIndicatorView.swift; sourceTree = "<group>"; };
+		854032BB22071C9100397B3F /* TypingIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypingIndicatorView.swift; sourceTree = "<group>"; };
+		854032BC22071C9100397B3F /* TypingBoldIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypingBoldIndicatorView.swift; sourceTree = "<group>"; };
+		854032BD22071C9100397B3F /* TypingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +162,9 @@
 		1469FB99201E8DE8001D72D6 /* NetworkClient */ = {
 			isa = PBXGroup;
 			children = (
-				1469FB97201E8DE4001D72D6 /* NetworkClient.swift */,
-				147909F3201E909100F09799 /* URLSessionNetworkClient.swift */,
-				147909F5201E90A900F09799 /* URLRequestConvertible.swift */,
+				854032A622071C3600397B3F /* Client */,
+				854032A222071C3600397B3F /* Request */,
+				854032A922071C3600397B3F /* Routing */,
 			);
 			path = NetworkClient;
 			sourceTree = "<group>";
@@ -154,6 +224,7 @@
 		14C082F4201CAC65006EF08F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				854032682207187000397B3F /* Core */,
 				14D6DBF320211349008291D1 /* Debug */,
 				14D6DBEF202111A4008291D1 /* Extensions */,
 				14ADC1BD201E86C30014339D /* REST */,
@@ -168,6 +239,9 @@
 		14C082FD201CAC6C006EF08F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				854032B322071C9100397B3F /* Alerts */,
+				854032B622071C9100397B3F /* SecureCode */,
+				854032B922071C9100397B3F /* Typing */,
 				145E0E502021DFEB003B757D /* Animations */,
 				14D6DBF820211407008291D1 /* Keyboard */,
 				14C082FE201CAC73006EF08F /* Cells */,
@@ -210,6 +284,8 @@
 		14D6DBEF202111A4008291D1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8540329722071B3800397B3F /* Standart Library */,
+				8540329822071B5E00397B3F /* UIKit */,
 				14D6DBF0202111B0008291D1 /* Application */,
 			);
 			path = Extensions;
@@ -244,6 +320,10 @@
 		8511CE302130488B0097EC73 /* Gestures */ = {
 			isa = PBXGroup;
 			children = (
+				8540329B22071BDF00397B3F /* LinkLongPressGestureRecognizer.swift */,
+				8540329A22071BDF00397B3F /* LinkRecognizable.swift */,
+				8540329C22071BDF00397B3F /* LinkTapGestureRecognizer.swift */,
+				8540329D22071BDF00397B3F /* LongPressClosureRecognizer.swift */,
 				14D6DBFB20211480008291D1 /* ClosureTapRecognizer.swift */,
 				8511CE37213050160097EC73 /* ClosureGestureRecognizer.swift */,
 				8511CE3521304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift */,
@@ -259,6 +339,159 @@
 				8511CE3A21305AC10097EC73 /* Weakable.swift */,
 			);
 			path = ARC;
+			sourceTree = "<group>";
+		};
+		854032682207187000397B3F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8540326E22071A4100397B3F /* AsyncOperation.swift */,
+				8540326D22071A4100397B3F /* Logger.swift */,
+				8540326F22071A4100397B3F /* BBCode */,
+				8540326922071A4100397B3F /* Files */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8540326922071A4100397B3F /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				8540326A22071A4100397B3F /* AppGroupFlagObserver.swift */,
+				8540326B22071A4100397B3F /* DirectoryWatcher.swift */,
+				8540326C22071A4100397B3F /* AppGroupFlagContainer.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		8540326F22071A4100397B3F /* BBCode */ = {
+			isa = PBXGroup;
+			children = (
+				8540327022071A4100397B3F /* BBCodeEntity.swift */,
+				8540327122071A4100397B3F /* BBCodeElement.swift */,
+				8540327222071A4100397B3F /* BBTagBuilder.swift */,
+				8540327322071A4100397B3F /* BBCodeParser.swift */,
+			);
+			path = BBCode;
+			sourceTree = "<group>";
+		};
+		8540327D22071AC900397B3F /* TextInput */ = {
+			isa = PBXGroup;
+			children = (
+				8540327E22071AC900397B3F /* TextInputUtils.swift */,
+				8540327F22071AC900397B3F /* UITextInput.swift */,
+			);
+			path = TextInput;
+			sourceTree = "<group>";
+		};
+		8540328822071ACA00397B3F /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				8540328922071ACA00397B3F /* Layout */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		8540328922071ACA00397B3F /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				8540328A22071ACA00397B3F /* UICollectionViewFlowLayout+ItemSize.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		8540329622071B2F00397B3F /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				8540328722071ACA00397B3F /* BidirectionalCollection.swift */,
+				8540328522071ACA00397B3F /* Collection+ViewLayout.swift */,
+				8540328622071ACA00397B3F /* CollectionsExtensions.swift */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
+		8540329722071B3800397B3F /* Standart Library */ = {
+			isa = PBXGroup;
+			children = (
+				8540329922071BBF00397B3F /* String */,
+				8540329622071B2F00397B3F /* Collections */,
+			);
+			path = "Standart Library";
+			sourceTree = "<group>";
+		};
+		8540329822071B5E00397B3F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8540328422071ACA00397B3F /* UIStackView.swift */,
+				8540328322071ACA00397B3F /* UIScreen+Keyboard.swift */,
+				8540328022071AC900397B3F /* NSAttributedString+Bounds.swift */,
+				8540327D22071AC900397B3F /* TextInput */,
+				8540328822071ACA00397B3F /* CollectionView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		8540329922071BBF00397B3F /* String */ = {
+			isa = PBXGroup;
+			children = (
+				8540328222071ACA00397B3F /* String+Search.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		854032A222071C3600397B3F /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				854032A322071C3600397B3F /* HTTPMethod.swift */,
+				854032A422071C3600397B3F /* HTTPParameters.swift */,
+				854032A522071C3600397B3F /* HTTPHeaders.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		854032A622071C3600397B3F /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				854032A722071C3600397B3F /* NetworkClient.swift */,
+				854032A822071C3600397B3F /* URLSessionNetworkClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		854032A922071C3600397B3F /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				854032AA22071C3600397B3F /* NetworkRouter.swift */,
+				854032AB22071C3600397B3F /* URLRequestConvertible.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		854032B322071C9100397B3F /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				854032B422071C9100397B3F /* AlertTextFieldController.swift */,
+				854032B522071C9100397B3F /* Alert.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		854032B622071C9100397B3F /* SecureCode */ = {
+			isa = PBXGroup;
+			children = (
+				854032B722071C9100397B3F /* SecureCodeContainerView.swift */,
+				854032B822071C9100397B3F /* SecureCodeInputView.swift */,
+			);
+			path = SecureCode;
+			sourceTree = "<group>";
+		};
+		854032B922071C9100397B3F /* Typing */ = {
+			isa = PBXGroup;
+			children = (
+				854032BA22071C9100397B3F /* RecordingIndicatorView.swift */,
+				854032BB22071C9100397B3F /* TypingIndicatorView.swift */,
+				854032BC22071C9100397B3F /* TypingBoldIndicatorView.swift */,
+				854032BD22071C9100397B3F /* TypingView.swift */,
+			);
+			path = Typing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,33 +574,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				854032B022071C3600397B3F /* URLSessionNetworkClient.swift in Sources */,
+				8540327722071A4100397B3F /* Logger.swift in Sources */,
 				14C08306201CAE68006EF08F /* UICollectionView+ViewModel.swift in Sources */,
 				14D6DBF2202111C5008291D1 /* Bundle.swift in Sources */,
 				14C08308201CECCC006EF08F /* XibInitializable.swift in Sources */,
 				14D6DBEB20210DC5008291D1 /* UITableView+ReusableCell.swift in Sources */,
+				854032BF22071C9100397B3F /* Alert.swift in Sources */,
+				8540328C22071ACA00397B3F /* UITextInput.swift in Sources */,
+				854032A022071BDF00397B3F /* LinkTapGestureRecognizer.swift in Sources */,
 				14ADC1C1201E87350014339D /* WebResponse.swift in Sources */,
+				854032AF22071C3600397B3F /* NetworkClient.swift in Sources */,
+				854032C522071C9100397B3F /* TypingView.swift in Sources */,
+				8540327622071A4100397B3F /* AppGroupFlagContainer.swift in Sources */,
 				14D6DBFA20211427008291D1 /* KeyboardInteracting.swift in Sources */,
 				14D6DBF720211368008291D1 /* FatalErrors.swift in Sources */,
 				14C08304201CADAA006EF08F /* UITableView+ViewModels.swift in Sources */,
-				147909F4201E909100F09799 /* URLSessionNetworkClient.swift in Sources */,
+				8540327422071A4100397B3F /* AppGroupFlagObserver.swift in Sources */,
+				8540328D22071ACA00397B3F /* NSAttributedString+Bounds.swift in Sources */,
 				8511CE3421304B3D0097EC73 /* VerticalPanGestureRecognizer.swift in Sources */,
+				8540329422071ACA00397B3F /* BidirectionalCollection.swift in Sources */,
 				14D6DBF620211368008291D1 /* Deinitializing.swift in Sources */,
+				8540329F22071BDF00397B3F /* LinkLongPressGestureRecognizer.swift in Sources */,
+				8540329E22071BDF00397B3F /* LinkRecognizable.swift in Sources */,
+				8540329122071ACA00397B3F /* UIStackView.swift in Sources */,
 				14ADC1BF201E86DC0014339D /* ResponseResult.swift in Sources */,
-				1469FB98201E8DE4001D72D6 /* NetworkClient.swift in Sources */,
+				8540328F22071ACA00397B3F /* String+Search.swift in Sources */,
 				14D6DBED20210F4E008291D1 /* UICollectionView+ReusableCell.swift in Sources */,
 				145E0E522021DFFD003B757D /* UIView+Shake.swift in Sources */,
+				854032A122071BDF00397B3F /* LongPressClosureRecognizer.swift in Sources */,
 				8511CE38213050160097EC73 /* ClosureGestureRecognizer.swift in Sources */,
-				147909F6201E90A900F09799 /* URLRequestConvertible.swift in Sources */,
+				854032C222071C9100397B3F /* RecordingIndicatorView.swift in Sources */,
+				854032AE22071C3600397B3F /* HTTPHeaders.swift in Sources */,
+				8540327922071A4100397B3F /* BBCodeEntity.swift in Sources */,
+				854032C122071C9100397B3F /* SecureCodeInputView.swift in Sources */,
+				8540328B22071ACA00397B3F /* TextInputUtils.swift in Sources */,
+				854032B222071C3600397B3F /* URLRequestConvertible.swift in Sources */,
 				1459E93E201FB83500A09D56 /* MKMapView+ViewModels.swift in Sources */,
+				8540329322071ACA00397B3F /* CollectionsExtensions.swift in Sources */,
 				14BC1A3520209E8A003AEFBD /* ResponseResult+Models.swift in Sources */,
 				14ADC1C3201E89DF0014339D /* APIError.swift in Sources */,
 				14C08302201CACC7006EF08F /* CellViewModel.swift in Sources */,
+				854032C422071C9100397B3F /* TypingBoldIndicatorView.swift in Sources */,
+				8540329222071ACA00397B3F /* Collection+ViewLayout.swift in Sources */,
+				8540329522071ACA00397B3F /* UICollectionViewFlowLayout+ItemSize.swift in Sources */,
+				8540327B22071A4100397B3F /* BBTagBuilder.swift in Sources */,
+				854032B122071C3600397B3F /* NetworkRouter.swift in Sources */,
+				854032BE22071C9100397B3F /* AlertTextFieldController.swift in Sources */,
 				8511CE32213048BE0097EC73 /* HorizontalPanGestureGecognizer.swift in Sources */,
+				854032AD22071C3600397B3F /* HTTPParameters.swift in Sources */,
 				14D6DBFE202115AD008291D1 /* UIViewController+KeyboardHandling.swift in Sources */,
+				8540327A22071A4100397B3F /* BBCodeElement.swift in Sources */,
 				8511CE3621304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift in Sources */,
 				8511CE3B21305AC10097EC73 /* Weakable.swift in Sources */,
+				854032C322071C9100397B3F /* TypingIndicatorView.swift in Sources */,
 				14D619CB201D1C510093CB06 /* Reusable.swift in Sources */,
 				14D6DBFC20211480008291D1 /* ClosureTapRecognizer.swift in Sources */,
+				8540327C22071A4100397B3F /* BBCodeParser.swift in Sources */,
+				854032AC22071C3600397B3F /* HTTPMethod.swift in Sources */,
+				8540327822071A4100397B3F /* AsyncOperation.swift in Sources */,
+				8540329022071ACA00397B3F /* UIScreen+Keyboard.swift in Sources */,
+				854032C022071C9100397B3F /* SecureCodeContainerView.swift in Sources */,
+				8540327522071A4100397B3F /* DirectoryWatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
