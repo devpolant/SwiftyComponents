@@ -65,7 +65,7 @@ public final class TypingView: BaseView {
         
         senderInfoLabel.snp.makeConstraints { maker in
             maker.top.bottom.right.equalToSuperview()
-            maker.left.equalTo(indicatorContainer.snp.right).offset(Constraints.senderInfo.leftOffset.adjustedByWidth)
+            maker.left.equalTo(indicatorContainer.snp.right).offset(Constraints.senderInfo.leftOffset)
         }
     }
     
@@ -93,8 +93,8 @@ public final class TypingView: BaseView {
         
         let indicatorView = TypingIndicatorView()
         indicatorView.itemColor = color
-        indicatorView.itemSize = Constraints.indicator.dotsSize.adjustedByWidth
-        indicatorView.itemPadding = Constraints.indicator.dotsPadding.adjustedByWidth
+        indicatorView.itemSize = Constraints.indicator.dotsSize
+        indicatorView.itemPadding = Constraints.indicator.dotsPadding
         
         indicatorView.setContentCompressionResistancePriority(.required, for: .horizontal)
         indicatorView.setContentHuggingPriority(.required, for: .horizontal)
@@ -113,15 +113,15 @@ public final class TypingView: BaseView {
         indicatorContainer.addSubview(indicatorView)
         
         indicatorView.circleColor = color
-        indicatorView.circleSize = Constraints.indicator.circleSize.adjustedByWidth
-        indicatorView.horizontalInset = Constraints.indicator.horizontalInset.adjustedByWidth
+        indicatorView.circleSize = Constraints.indicator.circleSize
+        indicatorView.horizontalInset = Constraints.indicator.horizontalInset
         
         indicatorView.snp.makeConstraints(makeIndicatorViewConstraints())
     }
     
     private func makeIndicatorViewConstraints() -> (ConstraintMaker) -> Void {
         return { maker in
-            maker.centerY.equalToSuperview().offset(Constraints.indicator.centerVerticalOffset.adjustedByWidth)
+            maker.centerY.equalToSuperview().offset(Constraints.indicator.centerVerticalOffset)
             maker.left.right.equalToSuperview()
         }
     }

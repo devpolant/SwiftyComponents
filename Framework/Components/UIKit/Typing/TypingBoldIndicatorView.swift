@@ -41,8 +41,8 @@ public final class TypingBoldIndicatorView: BaseView {
     
     // MARK: - Setup
     
-    public override func setup() {
-        super.setup()
+    public override func baseSetup() {
+        super.baseSetup()
         
         backgroundColor = .clear
         indicatorView.backgroundColor = backgroundColor

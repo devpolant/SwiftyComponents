@@ -27,6 +27,7 @@
 		14D6DBFA20211427008291D1 /* KeyboardInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBF920211427008291D1 /* KeyboardInteracting.swift */; };
 		14D6DBFC20211480008291D1 /* ClosureTapRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBFB20211480008291D1 /* ClosureTapRecognizer.swift */; };
 		14D6DBFE202115AD008291D1 /* UIViewController+KeyboardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6DBFD202115AD008291D1 /* UIViewController+KeyboardHandling.swift */; };
+		34C2FF60383131A9E1386260 /* Pods_Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A31255BD832EF4302C9317D /* Pods_Components.framework */; };
 		8511CE32213048BE0097EC73 /* HorizontalPanGestureGecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE31213048BE0097EC73 /* HorizontalPanGestureGecognizer.swift */; };
 		8511CE3421304B3D0097EC73 /* VerticalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE3321304B3D0097EC73 /* VerticalPanGestureRecognizer.swift */; };
 		8511CE3621304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CE3521304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift */; };
@@ -64,12 +65,24 @@
 		854032B222071C3600397B3F /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032AB22071C3600397B3F /* URLRequestConvertible.swift */; };
 		854032BE22071C9100397B3F /* AlertTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032B422071C9100397B3F /* AlertTextFieldController.swift */; };
 		854032BF22071C9100397B3F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032B522071C9100397B3F /* Alert.swift */; };
-		854032C022071C9100397B3F /* SecureCodeContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032B722071C9100397B3F /* SecureCodeContainerView.swift */; };
-		854032C122071C9100397B3F /* SecureCodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032B822071C9100397B3F /* SecureCodeInputView.swift */; };
 		854032C222071C9100397B3F /* RecordingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032BA22071C9100397B3F /* RecordingIndicatorView.swift */; };
 		854032C322071C9100397B3F /* TypingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032BB22071C9100397B3F /* TypingIndicatorView.swift */; };
 		854032C422071C9100397B3F /* TypingBoldIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032BC22071C9100397B3F /* TypingBoldIndicatorView.swift */; };
 		854032C522071C9100397B3F /* TypingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854032BD22071C9100397B3F /* TypingView.swift */; };
+		8540335E22071EFC00397B3F /* Mention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540331C22071EFB00397B3F /* Mention.swift */; };
+		8540335F22071EFC00397B3F /* MentionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540331D22071EFB00397B3F /* MentionInfo.swift */; };
+		8540336022071EFC00397B3F /* MessagePayloadBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540332022071EFB00397B3F /* MessagePayloadBuilder.swift */; };
+		8540336122071EFC00397B3F /* MessagePayloadParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540332122071EFB00397B3F /* MessagePayloadParser.swift */; };
+		8540336222071EFC00397B3F /* MessagePayloadRendererInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540332322071EFB00397B3F /* MessagePayloadRendererInput.swift */; };
+		8540336322071EFC00397B3F /* MessagePayloadRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540332422071EFB00397B3F /* MessagePayloadRenderer.swift */; };
+		8540336522071EFC00397B3F /* MentionControllerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540332722071EFB00397B3F /* MentionControllerImpl.swift */; };
+		8540336622071EFC00397B3F /* NSAttributedStringKey+Mention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540332922071EFB00397B3F /* NSAttributedStringKey+Mention.swift */; };
+		8540336722071EFC00397B3F /* InputTextStorageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540332A22071EFB00397B3F /* InputTextStorageDelegate.swift */; };
+		8540336822071EFC00397B3F /* InputTextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540332B22071EFB00397B3F /* InputTextStorage.swift */; };
+		8540336A22071FF900397B3F /* MentionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540336922071FF900397B3F /* MentionController.swift */; };
+		8540336C220721DB00397B3F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540336B220721DB00397B3F /* BaseView.swift */; };
+		854033722207231700397B3F /* RangeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854033712207231700397B3F /* RangeExtension.swift */; };
+		854033782207237600397B3F /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854033772207237600397B3F /* RoundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +108,8 @@
 		14D6DBF920211427008291D1 /* KeyboardInteracting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInteracting.swift; sourceTree = "<group>"; };
 		14D6DBFB20211480008291D1 /* ClosureTapRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureTapRecognizer.swift; sourceTree = "<group>"; };
 		14D6DBFD202115AD008291D1 /* UIViewController+KeyboardHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardHandling.swift"; sourceTree = "<group>"; };
+		1A31255BD832EF4302C9317D /* Pods_Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BD046C8F863D498F929313 /* Pods-Components.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Components.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Components/Pods-Components.debug.xcconfig"; sourceTree = "<group>"; };
 		8511CE31213048BE0097EC73 /* HorizontalPanGestureGecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPanGestureGecognizer.swift; sourceTree = "<group>"; };
 		8511CE3321304B3D0097EC73 /* VerticalPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		8511CE3521304BAB0097EC73 /* UnidirectionalPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidirectionalPanGestureRecognizer.swift; sourceTree = "<group>"; };
@@ -132,12 +147,25 @@
 		854032AB22071C3600397B3F /* URLRequestConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
 		854032B422071C9100397B3F /* AlertTextFieldController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTextFieldController.swift; sourceTree = "<group>"; };
 		854032B522071C9100397B3F /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		854032B722071C9100397B3F /* SecureCodeContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureCodeContainerView.swift; sourceTree = "<group>"; };
-		854032B822071C9100397B3F /* SecureCodeInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureCodeInputView.swift; sourceTree = "<group>"; };
 		854032BA22071C9100397B3F /* RecordingIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingIndicatorView.swift; sourceTree = "<group>"; };
 		854032BB22071C9100397B3F /* TypingIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypingIndicatorView.swift; sourceTree = "<group>"; };
 		854032BC22071C9100397B3F /* TypingBoldIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypingBoldIndicatorView.swift; sourceTree = "<group>"; };
 		854032BD22071C9100397B3F /* TypingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypingView.swift; sourceTree = "<group>"; };
+		8540331C22071EFB00397B3F /* Mention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mention.swift; sourceTree = "<group>"; };
+		8540331D22071EFB00397B3F /* MentionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionInfo.swift; sourceTree = "<group>"; };
+		8540332022071EFB00397B3F /* MessagePayloadBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePayloadBuilder.swift; sourceTree = "<group>"; };
+		8540332122071EFB00397B3F /* MessagePayloadParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePayloadParser.swift; sourceTree = "<group>"; };
+		8540332322071EFB00397B3F /* MessagePayloadRendererInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePayloadRendererInput.swift; sourceTree = "<group>"; };
+		8540332422071EFB00397B3F /* MessagePayloadRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePayloadRenderer.swift; sourceTree = "<group>"; };
+		8540332722071EFB00397B3F /* MentionControllerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionControllerImpl.swift; sourceTree = "<group>"; };
+		8540332922071EFB00397B3F /* NSAttributedStringKey+Mention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedStringKey+Mention.swift"; sourceTree = "<group>"; };
+		8540332A22071EFB00397B3F /* InputTextStorageDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTextStorageDelegate.swift; sourceTree = "<group>"; };
+		8540332B22071EFB00397B3F /* InputTextStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTextStorage.swift; sourceTree = "<group>"; };
+		8540336922071FF900397B3F /* MentionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentionController.swift; sourceTree = "<group>"; };
+		8540336B220721DB00397B3F /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		854033712207231700397B3F /* RangeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeExtension.swift; sourceTree = "<group>"; };
+		854033772207237600397B3F /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
+		E4D74EA7A6706BF296213FE2 /* Pods-Components.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Components.release.xcconfig"; path = "Pods/Target Support Files/Pods-Components/Pods-Components.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C2FF60383131A9E1386260 /* Pods_Components.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +239,8 @@
 			children = (
 				14C082F4201CAC65006EF08F /* Components */,
 				14C082F3201CAC65006EF08F /* Products */,
+				E6B12DA155F2AAE6DDE76A56 /* Pods */,
+				732DF3938B7B805D04B9AB15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -230,6 +261,7 @@
 				14ADC1BD201E86C30014339D /* REST */,
 				8511CE3921305A820097EC73 /* ARC */,
 				14C082FD201CAC6C006EF08F /* UIKit */,
+				854032C622071EFB00397B3F /* Features */,
 				14C082F5201CAC65006EF08F /* Components.h */,
 				14C082F6201CAC65006EF08F /* Info.plist */,
 			);
@@ -239,8 +271,8 @@
 		14C082FD201CAC6C006EF08F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				854033792207238100397B3F /* Base Views */,
 				854032B322071C9100397B3F /* Alerts */,
-				854032B622071C9100397B3F /* SecureCode */,
 				854032B922071C9100397B3F /* Typing */,
 				145E0E502021DFEB003B757D /* Animations */,
 				14D6DBF820211407008291D1 /* Keyboard */,
@@ -315,6 +347,14 @@
 				14D6DBFD202115AD008291D1 /* UIViewController+KeyboardHandling.swift */,
 			);
 			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		732DF3938B7B805D04B9AB15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A31255BD832EF4302C9317D /* Pods_Components.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8511CE302130488B0097EC73 /* Gestures */ = {
@@ -411,6 +451,7 @@
 		8540329722071B3800397B3F /* Standart Library */ = {
 			isa = PBXGroup;
 			children = (
+				854033702207230C00397B3F /* Range */,
 				8540329922071BBF00397B3F /* String */,
 				8540329622071B2F00397B3F /* Collections */,
 			);
@@ -474,15 +515,6 @@
 			path = Alerts;
 			sourceTree = "<group>";
 		};
-		854032B622071C9100397B3F /* SecureCode */ = {
-			isa = PBXGroup;
-			children = (
-				854032B722071C9100397B3F /* SecureCodeContainerView.swift */,
-				854032B822071C9100397B3F /* SecureCodeInputView.swift */,
-			);
-			path = SecureCode;
-			sourceTree = "<group>";
-		};
 		854032B922071C9100397B3F /* Typing */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,6 +524,106 @@
 				854032BD22071C9100397B3F /* TypingView.swift */,
 			);
 			path = Typing;
+			sourceTree = "<group>";
+		};
+		854032C622071EFB00397B3F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8540331A22071EFB00397B3F /* Mention */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8540331A22071EFB00397B3F /* Mention */ = {
+			isa = PBXGroup;
+			children = (
+				8540331B22071EFB00397B3F /* Entity */,
+				8540331E22071EFB00397B3F /* Payload */,
+				8540332522071EFB00397B3F /* TextController */,
+				8540332822071EFB00397B3F /* Text */,
+			);
+			path = Mention;
+			sourceTree = "<group>";
+		};
+		8540331B22071EFB00397B3F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8540331C22071EFB00397B3F /* Mention.swift */,
+				8540331D22071EFB00397B3F /* MentionInfo.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		8540331E22071EFB00397B3F /* Payload */ = {
+			isa = PBXGroup;
+			children = (
+				8540331F22071EFB00397B3F /* BBCodeTags */,
+				8540332222071EFB00397B3F /* AttributedText */,
+			);
+			path = Payload;
+			sourceTree = "<group>";
+		};
+		8540331F22071EFB00397B3F /* BBCodeTags */ = {
+			isa = PBXGroup;
+			children = (
+				8540332022071EFB00397B3F /* MessagePayloadBuilder.swift */,
+				8540332122071EFB00397B3F /* MessagePayloadParser.swift */,
+			);
+			path = BBCodeTags;
+			sourceTree = "<group>";
+		};
+		8540332222071EFB00397B3F /* AttributedText */ = {
+			isa = PBXGroup;
+			children = (
+				8540332322071EFB00397B3F /* MessagePayloadRendererInput.swift */,
+				8540332422071EFB00397B3F /* MessagePayloadRenderer.swift */,
+			);
+			path = AttributedText;
+			sourceTree = "<group>";
+		};
+		8540332522071EFB00397B3F /* TextController */ = {
+			isa = PBXGroup;
+			children = (
+				8540336922071FF900397B3F /* MentionController.swift */,
+				8540332722071EFB00397B3F /* MentionControllerImpl.swift */,
+			);
+			path = TextController;
+			sourceTree = "<group>";
+		};
+		8540332822071EFB00397B3F /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				8540332922071EFB00397B3F /* NSAttributedStringKey+Mention.swift */,
+				8540332A22071EFB00397B3F /* InputTextStorageDelegate.swift */,
+				8540332B22071EFB00397B3F /* InputTextStorage.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		854033702207230C00397B3F /* Range */ = {
+			isa = PBXGroup;
+			children = (
+				854033712207231700397B3F /* RangeExtension.swift */,
+			);
+			path = Range;
+			sourceTree = "<group>";
+		};
+		854033792207238100397B3F /* Base Views */ = {
+			isa = PBXGroup;
+			children = (
+				8540336B220721DB00397B3F /* BaseView.swift */,
+				854033772207237600397B3F /* RoundView.swift */,
+			);
+			path = "Base Views";
+			sourceTree = "<group>";
+		};
+		E6B12DA155F2AAE6DDE76A56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76BD046C8F863D498F929313 /* Pods-Components.debug.xcconfig */,
+				E4D74EA7A6706BF296213FE2 /* Pods-Components.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,6 +644,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14C082FA201CAC65006EF08F /* Build configuration list for PBXNativeTarget "Components" */;
 			buildPhases = (
+				65C34A55D879B5E2E80F5C26 /* [CP] Check Pods Manifest.lock */,
 				14C082ED201CAC65006EF08F /* Sources */,
 				14C082EE201CAC65006EF08F /* Frameworks */,
 				14C082EF201CAC65006EF08F /* Headers */,
@@ -569,6 +702,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		65C34A55D879B5E2E80F5C26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Components-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		14C082ED201CAC65006EF08F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -578,24 +736,34 @@
 				8540327722071A4100397B3F /* Logger.swift in Sources */,
 				14C08306201CAE68006EF08F /* UICollectionView+ViewModel.swift in Sources */,
 				14D6DBF2202111C5008291D1 /* Bundle.swift in Sources */,
+				8540336A22071FF900397B3F /* MentionController.swift in Sources */,
+				8540335E22071EFC00397B3F /* Mention.swift in Sources */,
+				854033722207231700397B3F /* RangeExtension.swift in Sources */,
 				14C08308201CECCC006EF08F /* XibInitializable.swift in Sources */,
 				14D6DBEB20210DC5008291D1 /* UITableView+ReusableCell.swift in Sources */,
+				8540336222071EFC00397B3F /* MessagePayloadRendererInput.swift in Sources */,
 				854032BF22071C9100397B3F /* Alert.swift in Sources */,
 				8540328C22071ACA00397B3F /* UITextInput.swift in Sources */,
+				8540335F22071EFC00397B3F /* MentionInfo.swift in Sources */,
 				854032A022071BDF00397B3F /* LinkTapGestureRecognizer.swift in Sources */,
+				8540336C220721DB00397B3F /* BaseView.swift in Sources */,
 				14ADC1C1201E87350014339D /* WebResponse.swift in Sources */,
+				8540336122071EFC00397B3F /* MessagePayloadParser.swift in Sources */,
 				854032AF22071C3600397B3F /* NetworkClient.swift in Sources */,
 				854032C522071C9100397B3F /* TypingView.swift in Sources */,
 				8540327622071A4100397B3F /* AppGroupFlagContainer.swift in Sources */,
 				14D6DBFA20211427008291D1 /* KeyboardInteracting.swift in Sources */,
+				8540336822071EFC00397B3F /* InputTextStorage.swift in Sources */,
 				14D6DBF720211368008291D1 /* FatalErrors.swift in Sources */,
 				14C08304201CADAA006EF08F /* UITableView+ViewModels.swift in Sources */,
 				8540327422071A4100397B3F /* AppGroupFlagObserver.swift in Sources */,
 				8540328D22071ACA00397B3F /* NSAttributedString+Bounds.swift in Sources */,
 				8511CE3421304B3D0097EC73 /* VerticalPanGestureRecognizer.swift in Sources */,
+				8540336722071EFC00397B3F /* InputTextStorageDelegate.swift in Sources */,
 				8540329422071ACA00397B3F /* BidirectionalCollection.swift in Sources */,
 				14D6DBF620211368008291D1 /* Deinitializing.swift in Sources */,
 				8540329F22071BDF00397B3F /* LinkLongPressGestureRecognizer.swift in Sources */,
+				8540336322071EFC00397B3F /* MessagePayloadRenderer.swift in Sources */,
 				8540329E22071BDF00397B3F /* LinkRecognizable.swift in Sources */,
 				8540329122071ACA00397B3F /* UIStackView.swift in Sources */,
 				14ADC1BF201E86DC0014339D /* ResponseResult.swift in Sources */,
@@ -607,16 +775,18 @@
 				854032C222071C9100397B3F /* RecordingIndicatorView.swift in Sources */,
 				854032AE22071C3600397B3F /* HTTPHeaders.swift in Sources */,
 				8540327922071A4100397B3F /* BBCodeEntity.swift in Sources */,
-				854032C122071C9100397B3F /* SecureCodeInputView.swift in Sources */,
+				8540336022071EFC00397B3F /* MessagePayloadBuilder.swift in Sources */,
 				8540328B22071ACA00397B3F /* TextInputUtils.swift in Sources */,
 				854032B222071C3600397B3F /* URLRequestConvertible.swift in Sources */,
 				1459E93E201FB83500A09D56 /* MKMapView+ViewModels.swift in Sources */,
 				8540329322071ACA00397B3F /* CollectionsExtensions.swift in Sources */,
 				14BC1A3520209E8A003AEFBD /* ResponseResult+Models.swift in Sources */,
 				14ADC1C3201E89DF0014339D /* APIError.swift in Sources */,
+				8540336622071EFC00397B3F /* NSAttributedStringKey+Mention.swift in Sources */,
 				14C08302201CACC7006EF08F /* CellViewModel.swift in Sources */,
 				854032C422071C9100397B3F /* TypingBoldIndicatorView.swift in Sources */,
 				8540329222071ACA00397B3F /* Collection+ViewLayout.swift in Sources */,
+				8540336522071EFC00397B3F /* MentionControllerImpl.swift in Sources */,
 				8540329522071ACA00397B3F /* UICollectionViewFlowLayout+ItemSize.swift in Sources */,
 				8540327B22071A4100397B3F /* BBTagBuilder.swift in Sources */,
 				854032B122071C3600397B3F /* NetworkRouter.swift in Sources */,
@@ -634,7 +804,7 @@
 				854032AC22071C3600397B3F /* HTTPMethod.swift in Sources */,
 				8540327822071A4100397B3F /* AsyncOperation.swift in Sources */,
 				8540329022071ACA00397B3F /* UIScreen+Keyboard.swift in Sources */,
-				854032C022071C9100397B3F /* SecureCodeContainerView.swift in Sources */,
+				854033782207237600397B3F /* RoundView.swift in Sources */,
 				8540327522071A4100397B3F /* DirectoryWatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -761,6 +931,7 @@
 		};
 		14C082FB201CAC65006EF08F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76BD046C8F863D498F929313 /* Pods-Components.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -784,6 +955,7 @@
 		};
 		14C082FC201CAC65006EF08F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4D74EA7A6706BF296213FE2 /* Pods-Components.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";

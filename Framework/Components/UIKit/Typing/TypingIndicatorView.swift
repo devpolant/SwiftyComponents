@@ -90,7 +90,7 @@ public final class TypingIndicatorView: BaseView {
     // MARK: - Animation
     
     private func addAnimation() {
-        guard !itemLayer.hasAnimation(forKey: Animation.key) else {
+        guard itemLayer.animation(forKey: Animation.key) == nil else {
             return
         }
         let animation = CABasicAnimation(keyPath: "opacity")
